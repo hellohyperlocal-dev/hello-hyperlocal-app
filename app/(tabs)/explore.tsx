@@ -24,7 +24,7 @@ export default function ExploreScreen() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const mapRef = useRef<MapView>(null);
+  const mapRef = useRef<any>(null);
 
   const businesses = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
