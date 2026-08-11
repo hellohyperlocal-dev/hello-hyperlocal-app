@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/tokens/colors.css">
+<link rel="stylesheet" href="_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/tokens/typography.css">
+<link rel="stylesheet" href="_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/styles.css">
+<script src="_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/_ds_bundle.js"></script>
+<style>
+  html,body{margin:0;background:#EDEBE6;font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+  a{color:var(--color-hunter);text-decoration:none}
+  a:hover{color:var(--color-spruce)}
+  input::placeholder,textarea::placeholder{color:var(--color-muted)}
+  @keyframes hhl-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  @keyframes hhl-blink{0%,70%,100%{opacity:.22}35%{opacity:1}}
+  @keyframes hhl-ping{0%{transform:scale(.7);opacity:.55}80%,100%{transform:scale(1.9);opacity:0}}
+</style>
+</helmet>
+<div style="padding:44px 56px 60px;min-width:3900px">
+  <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:4px">
+    <div style="font:800 26px/1 var(--font-sans);letter-spacing:-.02em;color:var(--color-onyx)">Hello Hyperlocal · Design Intent</div>
+    <div style="font:700 11px var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--color-hunter)">Mockup sprint</div>
+  </div>
+  <p style="margin:0 0 36px;font:400 14px/1.5 var(--font-sans);color:var(--color-muted);max-width:720px">To better visualize how the 'Hello Hyperlocal' brand translates into a digital experience, I’ve put together a set of interactive design prototypes. These aren't final screens, but rather a Design Sandbox—designed to stress-test our layout principles and see how the community interactions feel in a mobile-first environment. This allows us to align on the user journey and visual direction before we move into full-scale development.</p>
+
+  <div style="display:flex;gap:52px;align-items:flex-start">
+
+    <!-- ================= TASK 1 · SPLASH ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">01</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">Splash screen</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--color-spruce);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:#fff">9:41 {{ statusLight }}</div>
+        <div class="hhl-logo-placeholder" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:0 40px 20px">
+          <img src="assets/logo/hhl-logo.png" alt="Hello Linden" style="width:206px;height:auto;animation:hhl-float 4.5s ease-in-out infinite">
+          <div style="font:700 12px var(--font-sans);letter-spacing:.34em;text-transform:uppercase;color:#fff">Linden</div>
+        </div>
+        <div style="flex:none;display:flex;flex-direction:column;align-items:center;gap:22px;padding:0 40px 60px">
+          <div style="display:flex;gap:8px">
+            <span style="width:9px;height:9px;border-radius:50%;background:var(--color-grass);animation:hhl-blink 1.4s ease-in-out infinite"></span>
+            <span style="width:9px;height:9px;border-radius:50%;background:var(--color-grass);animation:hhl-blink 1.4s ease-in-out .2s infinite"></span>
+            <span style="width:9px;height:9px;border-radius:50%;background:var(--color-grass);animation:hhl-blink 1.4s ease-in-out .4s infinite"></span>
+          </div>
+          <div style="font:700 11px var(--font-sans);letter-spacing:.28em;text-transform:uppercase;color:var(--color-grass)">Love where you live</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TASK 2 · LOGIN ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">02</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">Login</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--surface-canvas);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:var(--color-onyx)">9:41 {{ statusDark }}</div>
+        <div style="flex:1;overflow:hidden;display:flex;flex-direction:column;padding:8px 26px 32px">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:14px;padding:12px 0 28px">
+            <img src="assets/logo/hhl-logo.png" alt="Hello Linden" style="width:104px;height:auto">
+          </div>
+          <div style="font:800 22px/1.15 var(--font-sans);letter-spacing:-.01em;color:var(--color-onyx);margin-bottom:6px">Welcome back</div>
+          <p style="margin:0 0 24px;font:400 13px/1.5 var(--font-sans);color:var(--color-muted)">Log in to keep up with {{ suburb }}.</p>
+
+          <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:8px">
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <label style="font:700 11px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;color:var(--color-hunter)">Email</label>
+              <input type="email" placeholder="you@example.com" style="border:1px solid var(--color-onyx-line);border-radius:12px;padding:14px 15px;font:500 14px var(--font-sans);color:var(--color-onyx);background:#fff;outline:none">
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <label style="font:700 11px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;color:var(--color-hunter)">Password</label>
+              <input type="password" placeholder="••••••••" style="border:1px solid var(--color-onyx-line);border-radius:12px;padding:14px 15px;font:500 14px var(--font-sans);color:var(--color-onyx);background:#fff;outline:none">
+            </div>
+          </div>
+          <div style="display:flex;justify-content:flex-end;margin-bottom:20px">
+            <span style="font:700 12px var(--font-sans);color:var(--color-hunter);cursor:pointer">Forgot password?</span>
+          </div>
+
+          <button type="button" style="background:var(--color-grass);color:var(--color-spruce);border:none;border-radius:999px;padding:16px;font:800 14px var(--font-sans);cursor:pointer;margin-bottom:22px">Log in</button>
+
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+            <div style="flex:1;height:1px;background:var(--color-onyx-line-soft)"></div>
+            <span style="font:700 11px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;color:var(--color-muted)">Or continue with</span>
+            <div style="flex:1;height:1px;background:var(--color-onyx-line-soft)"></div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:22px">
+            <button type="button" style="display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;border:1px solid var(--color-onyx-line);border-radius:999px;padding:13px;font:700 13px var(--font-sans);color:var(--color-onyx);cursor:pointer">
+              <span style="width:18px;height:18px;display:flex">{{ googleIcon }}</span>Continue with Google
+            </button>
+            <button type="button" style="display:flex;align-items:center;justify-content:center;gap:10px;background:var(--color-onyx);border:none;border-radius:999px;padding:13px;font:700 13px var(--font-sans);color:#fff;cursor:pointer">
+              <span style="width:18px;height:18px;display:flex;color:#fff">{{ appleIcon }}</span>Continue with Apple
+            </button>
+          </div>
+
+          <div style="flex:1"></div>
+
+          <button type="button" style="background:transparent;color:var(--color-spruce);border:1.5px solid var(--color-onyx-line);border-radius:999px;padding:15px;font:800 13px var(--font-sans);cursor:pointer;margin-bottom:12px">Continue as a visitor</button>
+          <p style="margin:0 0 20px;font:400 11.5px/1.4 var(--font-sans);color:var(--color-muted);text-align:center">Just passing through Linden? Browse the neighbourhood without an account.</p>
+
+          <div style="text-align:center">
+            <span style="font:400 13px var(--font-sans);color:var(--color-muted)">New here? </span><span style="font:700 13px var(--font-sans);color:var(--color-hunter);cursor:pointer">Create an account</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TASK 3 · ONBOARDING ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">03</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">Onboarding</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--surface-canvas);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:var(--color-onyx)">9:41 {{ statusDark }}</div>
+        <div style="flex:1;display:flex;flex-direction:column;padding:6px 20px 24px">
+          <div style="display:flex;justify-content:flex-end;padding:0 4px 12px"><span style="font:700 12px var(--font-sans);color:var(--color-hunter);cursor:pointer">Skip</span></div>
+          <div style="flex:1;background:var(--color-spruce);border-radius:24px;padding:16px;display:flex;flex-direction:column;gap:18px">
+            <div style="height:280px;border-radius:16px;background-color:var(--color-hunter);background-image:{{ onbImage }};background-size:cover;background-position:center"></div>
+            <div style="display:flex;flex-direction:column;gap:11px;padding:2px 6px 6px">
+              <div style="font:700 11px var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--color-grass)">{{ onbEyebrow }}</div>
+              <div style="font:800 29px/1.08 var(--font-sans);letter-spacing:-.02em;color:#fff">{{ onbTitle }}</div>
+              <p style="margin:0;font:400 14px/1.55 var(--font-sans);color:rgba(255,255,255,.78)">{{ onbBody }}</p>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 4px 0">
+            <div style="display:flex;gap:8px;align-items:center">
+              <sc-for list="{{ dots }}" as="dot" hint-placeholder-count="3">
+                <button type="button" onClick="{{ dot.onClick }}" style="{{ dot.style }}"></button>
+              </sc-for>
+            </div>
+            <button type="button" onClick="{{ nextSlide }}" style="background:var(--color-grass);color:var(--color-spruce);font:800 13px var(--font-sans);border:none;border-radius:999px;padding:14px 26px;cursor:pointer;display:inline-flex;align-items:center;gap:8px">{{ onbCta }}<span style="font-size:15px;line-height:1">→</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TASK 3 · HOME FEED ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">04</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">Home feed</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--surface-canvas);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:var(--color-onyx)">9:41 {{ statusDark }}</div>
+        <div style="flex:1;overflow:hidden">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px 2px">
+            <div style="font:800 24px var(--font-sans);letter-spacing:-.02em;color:var(--color-onyx);white-space:nowrap">{{ greeting }}</div>
+            <div style="width:42px;height:42px;border-radius:50%;background:var(--color-hunter);color:#fff;display:flex;align-items:center;justify-content:center;font:700 14px var(--font-sans)">{{ initial }}</div>
+          </div>
+          <div style="padding:0 20px;margin-bottom:16px;font:700 11px var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--color-hunter)">{{ locationLabel }}</div>
+          <div style="display:flex;gap:10px;padding:0 20px;margin-bottom:16px">
+            <x-import style="flex:1" component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.StatChip" value="R240" label="Love Local savings" hint-size="100%,88px"></x-import>
+            <x-import style="flex:1" component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.StatChip" value="03" label="Open RSVPs" hint-size="100%,88px"></x-import>
+          </div>
+          <div style="padding:0 20px;margin-bottom:16px">
+            <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.HeroCard" eyebrow="Around the neighbourhood" title="Load-shedding schedule update" body="Stage 2 tonight from 8pm–10:30pm. Linden falls under block 4." cta-label="Read more" hint-size="100%,196px"></x-import>
+          </div>
+          <div style="padding:0 20px;margin-bottom:12px">
+            <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.PillTabs" tabs="{{ homeTabs }}" active="{{ homeTab }}" on-change="{{ setHomeTab }}" hint-size="auto,44px"></x-import>
+          </div>
+          <div style="padding:0 20px;margin-bottom:18px;font:400 13px/1.55 var(--font-sans);color:var(--color-onyx)">{{ homeBlurb }}</div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;padding:0 20px;margin-bottom:12px">
+            <div style="font:800 15px var(--font-sans);color:var(--color-spruce)">Hidden gems near you</div>
+            <span style="font:700 12px var(--font-sans);color:var(--color-hunter);cursor:pointer">See all</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 20px 140px">
+            <div style="grid-column: span 2; height: 160px; border-radius: 16px; overflow: hidden; position: relative; background: var(--color-hunter); background-image: url(assets/photography/linden-market-2.jpg); background-size: cover; background-position: center">
+              <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,15,15,0) 35%,rgba(15,15,15,.75))"></div>
+              <span style="position:absolute;top:13px;left:13px;background:var(--color-grass);color:var(--color-spruce);font:700 10px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px">This Saturday</span>
+              <div style="position:absolute;left:15px;right:15px;bottom:14px;color:#fff">
+                <div style="font:800 17px var(--font-sans)">Linden Village Market</div>
+                <div style="font:600 12px var(--font-sans);color:rgba(255,255,255,.82)">8am–1pm · 4th Avenue · 214 going</div>
+              </div>
+            </div>
+            <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.FacilityCard" image="assets/photography/breakfast.jpg" name="Weekend breakfast" price="R85 · Goddess Cafe" hint-size="100%,140px"></x-import>
+            <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.FacilityCard" image="assets/photography/whippet-linden.jpg" name="The Whippet" price="Free entry" hint-size="100%,140px"></x-import>
+            <div style="grid-column:span 2;background:#fff;border:1px solid var(--color-onyx-line-soft);border-radius:16px;padding:15px 16px;display:flex;flex-direction:column;gap:11px">
+              <span style="align-self:flex-start;background:var(--color-spruce-soft);color:var(--color-hunter);font:700 10px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px">Marketplace · Wanted</span>
+              <p style="margin:0;font:500 14px/1.5 var(--font-sans);color:var(--color-onyx)">Looking for someone who can teach piano to my 8-year-old — preferably within the community.</p>
+              <div style="display:flex;align-items:center;gap:10px;padding-top:2px">
+                <div style="width:30px;height:30px;border-radius:50%;background:var(--color-hunter);color:#fff;display:flex;align-items:center;justify-content:center;font:700 11px var(--font-sans)">TM</div>
+                <div style="font:600 12px var(--font-sans);color:var(--color-muted)">Thandi M. · Block 4 · 2h ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center">
+          <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.BottomNav" items="{{ navItems }}" active="home" hint-size="auto,60px"></x-import>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TASK 4 · MERCHANT SPOTLIGHT ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">05</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">Love Local · Merchant spotlight</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--surface-canvas);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="position:relative;height:372px;flex:none;background:var(--color-hunter);background-image:url(assets/photography/goddess-cafe-linden.jpg);background-size:cover;background-position:center">
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,15,15,.38) 0%,rgba(15,15,15,0) 26%,rgba(15,15,15,.12) 52%,rgba(15,15,15,.84) 100%)"></div>
+          <div style="position:relative;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:#fff">9:41 {{ statusLight }}</div>
+          <div style="position:absolute;top:60px;left:20px;right:20px;display:flex;align-items:center;justify-content:space-between">
+            <button type="button" style="width:40px;height:40px;border-radius:50%;border:none;background:rgba(15,15,15,.34);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer">{{ backIcon }}</button>
+            <button type="button" style="width:40px;height:40px;border-radius:50%;border:none;background:rgba(15,15,15,.34);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer">{{ heartIcon }}</button>
+          </div>
+          <div style="position:absolute;left:22px;right:22px;bottom:22px;color:#fff">
+            <div style="font:700 11px var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--color-grass);margin-bottom:8px">Cafe · Linden</div>
+            <div style="font:800 32px/1 var(--font-sans);letter-spacing:-.02em">{{ merchantName }}</div>
+            <div style="font:600 13px var(--font-sans);color:rgba(255,255,255,.82);margin-top:8px">4th Avenue · Open till 3pm · 320m away</div>
+          </div>
+        </div>
+        <div style="flex:1;padding:18px 20px 128px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;gap:10px">
+            <x-import style="flex:1" component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.StatChip" value="4.8" label="Rating · 128 reviews" hint-size="100%,88px"></x-import>
+            <x-import style="flex:1" component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.StatChip" value="R85" label="Weekend breakfast" hint-size="100%,88px"></x-import>
+          </div>
+          <p style="margin:0;font:400 14px/1.6 var(--font-sans);color:var(--color-onyx)">A corner café on 4th Avenue pouring flat whites and plating big weekend breakfasts. A neighbourhood regular for slow Saturday mornings and after-market coffees.</p>
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--color-onyx-line-soft)">
+              <span style="width:7px;height:7px;border-radius:50%;background:var(--color-grass)"></span>
+              <span style="font:700 13px var(--font-sans);color:var(--color-onyx)">Open now</span>
+              <span style="font:400 13px var(--font-sans);color:var(--color-muted)">· 7am–3pm daily</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;padding:11px 0">
+              <span style="width:7px;height:7px;border-radius:50%;background:var(--color-hunter)"></span>
+              <span style="font:400 13px var(--font-sans);color:var(--color-muted)">44 Fourth Avenue, Linden, Johannesburg</span>
+            </div>
+          </div>
+          <div style="font:800 15px var(--font-sans);color:var(--color-spruce);margin-top:2px">More local spots</div>
+          <div style="border:1px solid var(--color-onyx-line-soft);border-radius:16px;overflow:hidden;display:flex;align-items:stretch">
+            <div style="width:112px;flex:none;background:var(--color-hunter);background-image:url(assets/photography/whippet-linden.jpg);background-size:cover;background-position:center"></div>
+            <div style="padding:13px 15px;display:flex;flex-direction:column;justify-content:center;gap:4px">
+              <div style="font:700 10px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter)">Pub · 200m</div>
+              <div style="font:700 15px var(--font-sans);color:var(--color-onyx)">The Whippet</div>
+              <div style="font:400 12px/1.4 var(--font-sans);color:var(--color-muted)">Free entry · Dog-friendly · Open till late</div>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:0;padding:16px 20px 24px;background:linear-gradient(180deg,rgba(252,250,247,0),var(--surface-canvas) 30%);display:flex;gap:12px">
+          <sc-if value="{{ notSupporting }}" hint-placeholder-val="{{ true }}">
+            <button type="button" onClick="{{ toggleSupport }}" style="flex:1;background:var(--color-grass);color:var(--color-spruce);border:none;border-radius:999px;padding:17px;font:800 15px var(--font-sans);cursor:pointer">Support local</button>
+          </sc-if>
+          <sc-if value="{{ supporting }}" hint-placeholder-val="{{ false }}">
+            <button type="button" onClick="{{ toggleSupport }}" style="flex:1;background:var(--color-spruce);color:#fff;border:none;border-radius:999px;padding:17px;font:800 15px var(--font-sans);cursor:pointer">You support {{ merchantName }}</button>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TASK 5 · EXPLORE ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">06</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">Explore · map &amp; directory</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--surface-canvas);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:var(--color-onyx)">9:41 {{ statusDark }}</div>
+        <div style="flex:1;overflow:hidden">
+          <div style="padding:8px 20px 2px;font:800 24px var(--font-sans);letter-spacing:-.02em;color:var(--color-onyx)">Explore</div>
+          <div style="padding:2px 20px 14px;font:400 13px var(--font-sans);color:var(--color-muted)">Everything local, all in one place.</div>
+          <div style="padding:0 20px 14px">
+            <div style="display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--color-onyx-line);border-radius:999px;padding:12px 16px;color:var(--color-muted)">
+              <span style="width:18px;height:18px;display:flex;color:var(--color-hunter)">{{ searchIcon }}</span>
+              <span style="font:500 13px var(--font-sans)">{{ searchPlaceholder }}</span>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;padding:0 20px 16px;overflow:hidden">
+            <sc-for list="{{ exploreChips }}" as="chip" hint-placeholder-count="5">
+              <button type="button" onClick="{{ chip.onClick }}" style="{{ chip.style }}">{{ chip.label }}</button>
+            </sc-for>
+          </div>
+          <div style="padding:0 20px 16px">
+            <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--color-onyx-line-soft)">
+              <svg viewBox="0 0 340 244" width="100%" style="display:block">
+                <rect width="340" height="244" fill="#E9E6DF"></rect>
+                <rect x="20" y="150" width="118" height="80" rx="12" fill="var(--color-grass-soft)"></rect>
+                <g stroke="#FCFAF7" stroke-width="15" stroke-linecap="round">
+                  <line x1="-10" y1="64" x2="352" y2="88"></line>
+                  <line x1="-10" y1="172" x2="352" y2="192"></line>
+                  <line x1="70" y1="-10" x2="118" y2="254"></line>
+                  <line x1="214" y1="-10" x2="258" y2="254"></line>
+                </g>
+                <g stroke="#E0DDD5" stroke-width="1.5">
+                  <line x1="-10" y1="120" x2="352" y2="138"></line>
+                  <line x1="160" y1="-10" x2="150" y2="254"></line>
+                </g>
+                <text x="30" y="196" font-family="var(--font-sans)" font-size="11" font-weight="700" fill="var(--color-hunter)" letter-spacing="1">LINDEN PARK</text>
+                <g>
+                  <circle cx="150" cy="128" r="24" fill="var(--color-grass)" opacity="0.28" style="transform-origin:150px 128px;animation:hhl-ping 2.2s ease-out infinite"></circle>
+                  <circle cx="150" cy="128" r="9" fill="var(--color-grass)" stroke="#fff" stroke-width="3"></circle>
+                </g>
+                <g fill="var(--color-spruce)">
+                  <circle cx="96" cy="82" r="14"></circle><circle cx="96" cy="82" r="4.5" fill="#fff"></circle>
+                  <circle cx="238" cy="100" r="14"></circle><circle cx="238" cy="100" r="4.5" fill="#fff"></circle>
+                  <circle cx="200" cy="186" r="14"></circle><circle cx="200" cy="186" r="4.5" fill="#fff"></circle>
+                </g>
+              </svg>
+              <div style="position:absolute;left:12px;bottom:12px;display:inline-flex;align-items:center;gap:7px;background:#fff;border-radius:999px;padding:7px 12px;box-shadow:var(--shadow-card)">
+                <span style="width:8px;height:8px;border-radius:50%;background:var(--color-grass)"></span>
+                <span style="font:700 11px var(--font-sans);color:var(--color-onyx)">You are here</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;padding:0 20px 8px">
+            <div style="font:800 15px var(--font-sans);color:var(--color-spruce)">Nearby</div>
+            <span style="font:700 12px var(--font-sans);color:var(--color-hunter);cursor:pointer">List view</span>
+          </div>
+          <div style="padding:0 20px 140px">
+            <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.ListRow" initials="GC" name="Goddess Cafe" meta="Coffee · 220m away" status="live" status-label="Open" hint-size="100%,68px"></x-import>
+            <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.ListRow" initials="TW" name="The Whippet" meta="Pub · 200m away" status="live" status-label="Open" hint-size="100%,68px"></x-import>
+            <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.ListRow" initials="LM" name="Linden Village Market" meta="Market · 400m away" status="pending" status-label="Sat only" is-last="{{ true }}" hint-size="100%,68px"></x-import>
+          </div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center">
+          <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.BottomNav" items="{{ navItems }}" active="explore" hint-size="auto,60px"></x-import>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TASK 6 · SHARE SOMETHING GREAT ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">07</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">Share something great</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--surface-canvas);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:var(--color-onyx)">9:41 {{ statusDark }}</div>
+        <div style="flex:1;overflow:hidden">
+          <div style="padding:8px 20px 2px;font:800 24px/1.15 var(--font-sans);letter-spacing:-.02em;color:var(--color-onyx)">Share something great</div>
+          <div style="padding:4px 20px 18px;font:400 13px/1.5 var(--font-sans);color:var(--color-muted)">Post it to your neighbours — everything's reviewed by the Linden team before it goes live.</div>
+          <div style="padding:0 20px 12px;font:700 11px var(--font-sans);letter-spacing:.14em;text-transform:uppercase;color:var(--color-hunter)">What are you sharing?</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 20px 18px">
+            <sc-for list="{{ shareCards }}" as="card" hint-placeholder-count="6">
+              <button type="button" onClick="{{ card.onClick }}" style="{{ card.style }}">
+                <span style="width:22px;height:22px;display:flex;color:{{ card.iconColor }}">{{ card.icon }}</span>
+                <span style="font:700 13px var(--font-sans);color:var(--color-onyx)">{{ card.label }}</span>
+                <span style="font:400 11px/1.3 var(--font-sans);color:var(--color-muted)">{{ card.sub }}</span>
+              </button>
+            </sc-for>
+          </div>
+          <div style="padding:0 20px 140px;display:flex;flex-direction:column;gap:12px">
+            <div style="background:#fff;border:1px solid var(--color-onyx-line-soft);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:12px">
+              <input type="text" placeholder="{{ composeTitle }}" style="border:none;outline:none;background:transparent;font:700 16px var(--font-sans);color:var(--color-onyx);padding:2px 0">
+              <div style="height:1px;background:var(--color-onyx-line-soft)"></div>
+              <div style="font:400 14px/1.5 var(--font-sans);color:var(--color-muted);min-height:56px">Tell your neighbours what makes it great…</div>
+              <div style="display:flex;align-items:center;gap:10px;border:1.5px dashed var(--color-onyx-line);border-radius:12px;padding:14px;color:var(--color-hunter)">
+                <span style="width:20px;height:20px;display:flex">{{ cameraIcon }}</span>
+                <span style="font:700 13px var(--font-sans);color:var(--color-onyx)">Add photos</span>
+                <span style="font:400 12px var(--font-sans);color:var(--color-muted);margin-left:auto">Real, un-stocked shots</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:9px;padding:2px">
+              <span style="width:16px;height:16px;display:flex;color:var(--color-hunter)">{{ shieldIcon }}</span>
+              <span style="font:400 12px/1.4 var(--font-sans);color:var(--color-muted)">Reviewed before publishing, usually within a day.</span>
+            </div>
+            <button type="button" style="background:var(--color-grass);color:var(--color-spruce);border:none;border-radius:999px;padding:17px;font:800 15px var(--font-sans);cursor:pointer">{{ postLabel }}</button>
+          </div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center">
+          <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.BottomNav" items="{{ navItems }}" active="share" hint-size="auto,60px"></x-import>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TASK 7 · WHAT'S ON ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">08</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">What's on · events</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--surface-canvas);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:var(--color-onyx)">9:41 {{ statusDark }}</div>
+        <div style="flex:1;overflow:hidden">
+          <div style="padding:8px 20px 2px;font:800 24px var(--font-sans);letter-spacing:-.02em;color:var(--color-onyx)">What's on</div>
+          <div style="padding:2px 20px 14px;font:400 13px var(--font-sans);color:var(--color-muted)">Every market, gig and gathering in Linden.</div>
+          <div style="display:flex;gap:4px;justify-content:space-between;padding:0 16px 18px">
+            <sc-for list="{{ days }}" as="day" hint-placeholder-count="7">
+              <button type="button" onClick="{{ day.onClick }}" style="{{ day.style }}">
+                <span style="font:700 10px var(--font-sans);letter-spacing:.06em;opacity:.75">{{ day.wd }}</span>
+                <span style="font:800 15px var(--font-sans)">{{ day.date }}</span>
+              </button>
+            </sc-for>
+          </div>
+          <div style="padding:0 20px 18px">
+            <div style="position: relative; height: 190px; border-radius: 20px; overflow: hidden; background: var(--color-hunter); background-image: url(assets/photography/linden-market-2.jpg); background-size: cover; background-position: center">
+              <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,15,15,0) 30%,rgba(15,15,15,.8))"></div>
+              <span style="position:absolute;top:14px;left:14px;background:var(--color-grass);color:var(--color-spruce);font:700 10px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px">Featured · Saturday</span>
+              <div style="position:absolute;left:16px;right:16px;bottom:14px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;color:#fff">
+                <div>
+                  <div style="font:800 19px var(--font-sans)">Linden Village Market</div>
+                  <div style="font:600 12px var(--font-sans);color:rgba(255,255,255,.82);margin-top:3px">Sat 8am–1pm · 4th Avenue · 214 going</div>
+                </div>
+                <sc-if value="{{ notGoing }}" hint-placeholder-val="{{ true }}">
+                  <button type="button" onClick="{{ toggleGoing }}" style="flex:none;background:var(--color-grass);color:var(--color-spruce);border:none;border-radius:999px;padding:10px 18px;font:800 12px var(--font-sans);cursor:pointer">RSVP</button>
+                </sc-if>
+                <sc-if value="{{ whatsonGoing }}" hint-placeholder-val="{{ false }}">
+                  <button type="button" onClick="{{ toggleGoing }}" style="flex:none;background:#fff;color:var(--color-spruce);border:none;border-radius:999px;padding:10px 18px;font:800 12px var(--font-sans);cursor:pointer">Going</button>
+                </sc-if>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;padding:0 20px 10px">
+            <div style="font:800 15px var(--font-sans);color:var(--color-spruce)">This week</div>
+            <span style="font:700 12px var(--font-sans);color:var(--color-hunter);cursor:pointer">See all</span>
+          </div>
+          <div style="padding:0 20px 140px;display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;align-items:center;gap:13px">
+              <div style="width:66px;height:66px;flex:none;border-radius:14px;background:var(--color-hunter);background-image:url(assets/photography/kids-fun-in-street.jpg);background-size:cover;background-position:center"></div>
+              <div style="flex:1">
+                <div style="font:700 10px var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--color-hunter)">Sun · 10am</div>
+                <div style="font:700 14px var(--font-sans);color:var(--color-onyx);margin:2px 0">Family fun street party</div>
+                <div style="font:400 12px var(--font-sans);color:var(--color-muted)">3rd Avenue · Free entry</div>
+              </div>
+              <span style="color:var(--color-hunter);font-size:18px">›</span>
+            </div>
+            <div style="height:1px;background:var(--color-onyx-line-soft)"></div>
+            <div style="display:flex;align-items:center;gap:13px">
+              <div style="width:66px;height:66px;flex:none;border-radius:14px;background:var(--color-hunter);background-image:url(assets/photography/winter-menu.jpg);background-size:cover;background-position:center"></div>
+              <div style="flex:1">
+                <div style="font:700 10px var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--color-hunter)">Fri · 6pm</div>
+                <div style="font:700 14px var(--font-sans);color:var(--color-onyx);margin:2px 0">Winter menu launch</div>
+                <div style="font:400 12px var(--font-sans);color:var(--color-muted)">Goddess Cafe · 4th Avenue</div>
+              </div>
+              <span style="color:var(--color-hunter);font-size:18px">›</span>
+            </div>
+            <div style="height:1px;background:var(--color-onyx-line-soft)"></div>
+            <div style="display:flex;align-items:center;gap:13px">
+              <div style="width:66px;height:66px;flex:none;border-radius:14px;background:var(--color-hunter);background-image:url(assets/photography/churros.jpg);background-size:cover;background-position:center"></div>
+              <div style="flex:1">
+                <div style="font:700 10px var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--color-hunter)">Fri · 5–9pm</div>
+                <div style="font:700 14px var(--font-sans);color:var(--color-onyx);margin:2px 0">Night market bites</div>
+                <div style="font:400 12px var(--font-sans);color:var(--color-muted)">7th Street · Food &amp; makers</div>
+              </div>
+              <span style="color:var(--color-hunter);font-size:18px">›</span>
+            </div>
+          </div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center">
+          <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.BottomNav" items="{{ navItems }}" active="whatson" hint-size="auto,60px"></x-import>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= TASK 8 · COMMUNITY MARKETPLACE ================= -->
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;flex:none">
+      <div style="display:inline-flex;align-items:center;gap:9px;padding:8px;border-radius:999px;background:var(--color-spruce-soft)">
+        <span style="width:24px;height:24px;border-radius:50%;background:var(--color-spruce);color:var(--color-grass);font:700 11px var(--font-mono);display:flex;align-items:center;justify-content:center">09</span>
+        <span style="font:700 11px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter);padding-right:12px">Community marketplace</span>
+      </div>
+      <div style="width:380px;min-height:812px;background:var(--surface-canvas);border-radius:44px;position:relative;overflow:hidden;box-shadow:0 40px 90px rgba(15,15,15,.28),0 0 0 1px rgba(15,15,15,.05);display:flex;flex-direction:column;flex:none">
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px;font:700 14px var(--font-sans);color:var(--color-onyx)">9:41 {{ statusDark }}</div>
+        <div style="flex:1;overflow:hidden">
+          <div style="padding:8px 20px 2px;font:800 24px var(--font-sans);letter-spacing:-.02em;color:var(--color-onyx)">Marketplace</div>
+          <div style="padding:2px 20px 14px;font:400 13px var(--font-sans);color:var(--color-muted)">Buy, sell, hire and help — around the corner.</div>
+          <div style="display:flex;gap:8px;padding:0 20px 16px;overflow:hidden">
+            <sc-for list="{{ marketChips }}" as="chip" hint-placeholder-count="5">
+              <button type="button" onClick="{{ chip.onClick }}" style="{{ chip.style }}">{{ chip.label }}</button>
+            </sc-for>
+          </div>
+          <div style="padding:0 20px 18px">
+            <div style="border:1px solid var(--color-onyx-line-soft);border-radius:20px;overflow:hidden;background:#fff">
+              <div style="position:relative;height:172px;background:var(--color-hunter);background-image:url(assets/photography/dog-walking-park.jpeg);background-size:cover;background-position:center">
+                <span style="position:absolute;top:13px;left:13px;background:var(--color-grass);color:var(--color-spruce);font:700 10px var(--font-sans);letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px">Boosted</span>
+              </div>
+              <div style="padding:15px 16px;display:flex;flex-direction:column;gap:8px">
+                <div style="font:700 10px var(--font-sans);letter-spacing:.13em;text-transform:uppercase;color:var(--color-hunter)">Services · Pets</div>
+                <div style="font:800 17px var(--font-sans);color:var(--color-onyx)">Linden Paws — dog walking &amp; sitting</div>
+                <div style="font:400 12px var(--font-sans);color:var(--color-muted)">By Naledi K. · Block 2 · 4.9 (36 walks)</div>
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+                  <div><span style="font:500 20px var(--font-mono);color:var(--color-spruce)">R80</span><span style="font:400 12px var(--font-sans);color:var(--color-muted)"> / walk</span></div>
+                  <button type="button" style="background:var(--color-spruce);color:#fff;border:none;border-radius:999px;padding:12px 22px;font:700 13px var(--font-sans);cursor:pointer">Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:0 20px 10px;font:800 15px var(--font-sans);color:var(--color-spruce)">More listings</div>
+          <div style="padding:0 20px 12px;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--color-onyx-line-soft);border-radius:16px;padding:13px 15px">
+              <div style="flex:1"><div style="font:700 10px var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--color-hunter)">Services</div><div style="font:700 14px var(--font-sans);color:var(--color-onyx);margin:2px 0">Piano lessons for your kids</div><div style="font:400 12px var(--font-sans);color:var(--color-muted)">Thandi M. · Block 4</div></div>
+              <span style="flex:none;font:500 14px var(--font-mono);color:var(--color-spruce)">R150</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--color-onyx-line-soft);border-radius:16px;padding:13px 15px">
+              <div style="flex:1"><div style="font:700 10px var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--color-hunter)">For sale</div><div style="font:700 14px var(--font-sans);color:var(--color-onyx);margin:2px 0">Kids' mountain bike · 20-inch</div><div style="font:400 12px var(--font-sans);color:var(--color-muted)">Like new · barely ridden</div></div>
+              <span style="flex:none;font:500 14px var(--font-mono);color:var(--color-spruce)">R450</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--color-onyx-line-soft);border-radius:16px;padding:13px 15px">
+              <div style="flex:1"><div style="font:700 10px var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--color-hunter)">Community</div><div style="font:700 14px var(--font-sans);color:var(--color-onyx);margin:2px 0">4th Avenue garage sale</div><div style="font:400 12px var(--font-sans);color:var(--color-muted)">Sat 8am–12pm · No. 44</div></div>
+              <span style="flex:none;background:var(--color-grass-soft);color:var(--color-spruce);font:700 11px var(--font-sans);padding:6px 12px;border-radius:999px">Free</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--color-onyx-line-soft);border-radius:16px;padding:13px 15px">
+              <div style="flex:1"><div style="font:700 10px var(--font-sans);letter-spacing:.12em;text-transform:uppercase;color:var(--color-hunter)">Volunteers</div><div style="font:700 14px var(--font-sans);color:var(--color-onyx);margin:2px 0">Linden Park clean-up crew</div><div style="font:400 12px var(--font-sans);color:var(--color-muted)">Sunday morning · all welcome</div></div>
+              <span style="flex:none;background:var(--color-spruce-soft);color:var(--color-hunter);font:700 11px var(--font-sans);padding:6px 12px;border-radius:999px">Join</span>
+            </div>
+          </div>
+          <div style="padding:2px 20px 140px;font:400 11.5px/1.5 var(--font-sans);color:var(--color-muted)">Small paid listings keep Hello Linden free for residents.</div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center">
+          <x-import component-from-global-scope="HelloHyperlocalDesignSystem_7b16bf.BottomNav" items="{{ navItems }}" active="home" hint-size="auto,60px"></x-import>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:3900,&quot;height&quot;:980},&quot;residentName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Sam&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;suburbName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Linden&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;merchantName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Goddess Cafe&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  state = { onbSlide: 0, homeTab: 'Around you', supporting: false, exploreCat: 'Coffee', shareType: 'event', whatsonDay: 2, whatsonGoing: false, marketFilter: 'All' };
+
+  get slides() {
+    return [
+      { eyebrow: 'Step 01 · Rediscover', title: 'Rediscover your street', body: "The café two roads over, the family bakery, the weekend market — the good stuff hiding around the corner. \u201CI didn't know that was here!\u201D", image: 'linden-streetview.jpeg', cta: 'Next' },
+      { eyebrow: 'Step 02 · Connect', title: 'Connect with neighbours', body: 'Local news, events and the people who make Linden, Linden — all in one trusted place instead of scattered across five group chats.', image: 'kids-fun-in-street.jpg', cta: 'Next' },
+      { eyebrow: 'Step 03 · Love', title: 'Love where you live', body: 'Support local because it\u2019s easy, share something great, and become a proud ambassador for your suburb.', image: 'goddess-cafe-linden.jpg', cta: 'Get started' },
+    ];
+  }
+
+  icon(name) {
+    const R = React.createElement;
+    const P = {
+      home: ['M3 11.4 12 4l9 7.4', 'M5 10v10h14V10'],
+      heart: ['M12 20.3C6.9 16.7 3.2 13.2 3.2 9.1c0-2.5 1.9-4.5 4.3-4.5 1.6 0 3 .9 3.7 2.2.7-1.3 2.1-2.2 3.7-2.2 2.4 0 4.3 2 4.3 4.5 0 4.1-3.7 7.6-8.8 11.2z'],
+      map: ['M9 4 3 6.5v13L9 17l6 2.5 6-2.5v-13L15 6.5 9 4z', 'M9 4v13', 'M15 6.5v13'],
+      calendar: ['M4 6h16v14H4z', 'M4 10h16', 'M8 3v4', 'M16 3v4'],
+      plus: ['M12 5v14', 'M5 12h14'],
+      search: ['M11 5a6 6 0 1 0 0 12 6 6 0 0 0 0-12z', 'M20 20l-4.3-4.3'],
+      megaphone: ['M4 10v4h3l7 4V6l-7 4H4z', 'M18 9a3 3 0 0 1 0 6'],
+      briefcase: ['M3 8h18v11H3z', 'M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2', 'M3 13h18'],
+      star: ['M12 4l2.4 5 5.4.6-4 3.7 1.1 5.4-4.9-2.8-4.9 2.8 1.1-5.4-4-3.7 5.4-.6z'],
+      pin: ['M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10z', 'M12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'],
+      store: ['M4 8h16v12H4z', 'M4 8 5.6 4h12.8L20 8', 'M9.5 20v-5.5h5V20'],
+      camera: ['M4 8h3l1.5-2.4h7L17 8h3v11H4z', 'M12 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'],
+      shield: ['M12 3 5 6v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9V6z', 'M9.2 12l1.9 1.9 3.7-3.8'],
+      back: ['M15 5 8 12l7 7'],
+    };
+    const paths = P[name] || [];
+    return R('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round', width: '100%', height: '100%' },
+      paths.map((d, i) => R('path', { key: i, d })));
+  }
+
+  googleIcon() {
+    const R = React.createElement;
+    return R('svg', { viewBox: '0 0 48 48', width: '100%', height: '100%' }, [
+      R('path', { key: 'y', fill: '#FFC107', d: 'M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12s5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24s8.955,20,20,20s20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z' }),
+      R('path', { key: 'r', fill: '#FF3D00', d: 'M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z' }),
+      R('path', { key: 'g', fill: '#4CAF50', d: 'M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z' }),
+      R('path', { key: 'b', fill: '#1976D2', d: 'M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z' }),
+    ]);
+  }
+
+  appleIcon() {
+    const R = React.createElement;
+    return R('svg', { viewBox: '0 0 384 512', width: '100%', height: '100%', fill: 'currentColor' },
+      R('path', { d: 'M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z' }));
+  }
+
+  cluster(color) {
+    const R = React.createElement;
+    const signal = R('svg', { key: 's', width: 17, height: 11, viewBox: '0 0 17 11', fill: color },
+      [[0, 7, 3, 4], [5, 4.5, 3, 6.5], [10, 2, 3, 9], [15, 0, 3, 11]].map(([x, y, w, h], i) => R('rect', { key: i, x, y, width: w, height: h, rx: 1 })));
+    const wifi = R('svg', { key: 'w', width: 16, height: 11, viewBox: '0 0 16 11', fill: color }, [
+      R('path', { key: 0, d: 'M8 2.1c2.4 0 4.6.9 6.2 2.5l-1.5 1.7C11.5 5.1 9.8 4.4 8 4.4S4.5 5.1 3.3 6.3L1.8 4.6C3.4 3 5.6 2.1 8 2.1z' }),
+      R('circle', { key: 1, cx: 8, cy: 8.7, r: 1.3 }),
+    ]);
+    const batt = R('svg', { key: 'b', width: 25, height: 12, viewBox: '0 0 25 12' }, [
+      R('rect', { key: 0, x: 0.6, y: 0.6, width: 21, height: 10.8, rx: 2.6, fill: 'none', stroke: color, strokeOpacity: 0.45 }),
+      R('rect', { key: 1, x: 2.4, y: 2.4, width: 15.2, height: 7.2, rx: 1.4, fill: color }),
+      R('rect', { key: 2, x: 23, y: 4, width: 2, height: 4, rx: 1, fill: color }),
+    ]);
+    return R('div', { style: { display: 'flex', alignItems: 'center', gap: 6 } }, [signal, wifi, batt]);
+  }
+
+  renderVals() {
+    const s = this.state;
+    const slide = this.slides[s.onbSlide];
+    const name = (this.props.residentName ?? 'Sam').trim() || 'Sam';
+    const merchantName = (this.props.merchantName ?? 'Goddess Cafe').trim() || 'Goddess Cafe';
+    const suburb = (this.props.suburbName ?? 'Linden').trim() || 'Linden';
+
+    const blurbs = {
+      'Around you': 'Piano teacher wanted for an 8-year-old — must be in the neighbourhood.',
+      "What's on": 'Linden Village Market this Saturday — 8am–1pm on 4th Avenue.',
+      'Love Local': 'Weekend breakfast special at Goddess Cafe — R85, all morning.',
+    };
+
+    const navKeys = [
+      ['home', 'Home', 'home'],
+      ['love', 'Love Local', 'heart'],
+      ['explore', 'Explore', 'map'],
+      ['whatson', "What's on", 'calendar'],
+      ['share', 'Share', 'plus'],
+    ];
+    const navItems = navKeys.map(([key, label, ic]) => ({ key, label, icon: this.icon(ic) }));
+
+    const dots = this.slides.map((_, i) => ({
+      i,
+      onClick: () => this.setState({ onbSlide: i }),
+      style: {
+        width: i === s.onbSlide ? '24px' : '8px', height: '8px', borderRadius: '999px',
+        background: i === s.onbSlide ? 'var(--color-spruce)' : 'var(--color-onyx-line)',
+        border: 'none', padding: 0, cursor: 'pointer', transition: 'all .25s ease',
+      },
+    }));
+
+    const cats = ['Coffee', 'Breakfast', 'Doctor', 'Gym', 'Pet shop', 'Park'];
+    const exploreChips = cats.map((label) => {
+      const active = label === s.exploreCat;
+      return {
+        label,
+        onClick: () => this.setState({ exploreCat: label }),
+        style: {
+          flex: 'none', whiteSpace: 'nowrap', border: 'none', cursor: 'pointer',
+          borderRadius: '999px', padding: '9px 16px', fontFamily: 'var(--font-sans)',
+          fontSize: '12px', fontWeight: 700,
+          background: active ? 'var(--color-spruce)' : 'var(--color-spruce-soft)',
+          color: active ? 'var(--color-grass)' : 'var(--color-hunter)',
+        },
+      };
+    });
+
+    const shareDefs = [
+      ['event', 'Event', 'A market, gig or gathering', 'calendar'],
+      ['news', 'Around the \u2019hood', 'Community news & notices', 'megaphone'],
+      ['lostfound', 'Lost & Found', 'A pet, keys, a wallet', 'search'],
+      ['job', 'Job', 'Hiring or looking', 'briefcase'],
+      ['recommend', 'Recommendation', 'A spot worth a shout', 'star'],
+      ['business', 'Business listing', 'Put your shop on the map', 'store'],
+    ];
+    const shareCards = shareDefs.map(([key, label, sub, ic]) => {
+      const active = key === s.shareType;
+      return {
+        key, label, sub, icon: this.icon(ic),
+        iconColor: active ? 'var(--color-spruce)' : 'var(--color-hunter)',
+        onClick: () => this.setState({ shareType: key }),
+        style: {
+          textAlign: 'left', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '7px',
+          padding: '14px', borderRadius: '16px', background: active ? 'var(--color-grass-soft)' : '#fff',
+          border: active ? '1.5px solid var(--color-grass)' : '1px solid var(--color-onyx-line-soft)',
+        },
+      };
+    });
+    const composeMap = {
+      event: 'Name your event\u2026', news: 'What\u2019s the news?', lostfound: 'What did you lose or find?',
+      job: 'What\u2019s the role?', recommend: 'What are you recommending?', business: 'Your business name\u2026',
+    };
+
+    const dayDefs = [['Mon', 6], ['Tue', 7], ['Wed', 8], ['Thu', 9], ['Fri', 10], ['Sat', 11], ['Sun', 12]];
+    const days = dayDefs.map(([wd, date], i) => {
+      const active = i === s.whatsonDay;
+      return {
+        wd, date, onClick: () => this.setState({ whatsonDay: i }),
+        style: {
+          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px', border: 'none',
+          cursor: 'pointer', borderRadius: '14px', padding: '9px 0', width: '40px', flex: 'none',
+          background: active ? 'var(--color-spruce)' : 'transparent', color: active ? 'var(--color-grass)' : 'var(--color-onyx)',
+        },
+      };
+    });
+
+    const mcats = ['All', 'Services', 'For sale', 'Jobs', 'Free'];
+    const marketChips = mcats.map((label) => {
+      const active = label === s.marketFilter;
+      return {
+        label, onClick: () => this.setState({ marketFilter: label }),
+        style: {
+          flex: 'none', whiteSpace: 'nowrap', border: 'none', cursor: 'pointer', borderRadius: '999px',
+          padding: '9px 16px', fontFamily: 'var(--font-sans)', fontSize: '12px', fontWeight: 700,
+          background: active ? 'var(--color-spruce)' : 'var(--color-spruce-soft)',
+          color: active ? 'var(--color-grass)' : 'var(--color-hunter)',
+        },
+      };
+    });
+
+    return {
+      statusLight: this.cluster('#ffffff'),
+      statusDark: this.cluster('var(--color-onyx)'),
+      backIcon: this.icon('back'),
+      heartIcon: this.icon('heart'),
+      searchIcon: this.icon('search'),
+      cameraIcon: this.icon('camera'),
+      shieldIcon: this.icon('shield'),
+      googleIcon: this.googleIcon(),
+      appleIcon: this.appleIcon(),
+      suburb,
+      navItems,
+
+      onbImage: `url(assets/photography/${slide.image})`,
+      onbEyebrow: slide.eyebrow,
+      onbTitle: slide.title,
+      onbBody: slide.body,
+      onbCta: slide.cta,
+      dots,
+      nextSlide: () => this.setState({ onbSlide: (s.onbSlide + 1) % this.slides.length }),
+
+      greeting: `Hello, ${name}.`,
+      initial: name.charAt(0).toUpperCase(),
+      locationLabel: `${suburb} · Block 4`,
+      homeTabs: ['Around you', "What's on", 'Love Local'],
+      homeTab: s.homeTab,
+      setHomeTab: (t) => this.setState({ homeTab: t }),
+      homeBlurb: blurbs[s.homeTab],
+
+      merchantName,
+      supporting: s.supporting,
+      notSupporting: !s.supporting,
+      toggleSupport: () => this.setState((st) => ({ supporting: !st.supporting })),
+
+      searchPlaceholder: `Search ${suburb}`,
+      exploreChips,
+
+      shareCards,
+      composeTitle: composeMap[s.shareType],
+      postLabel: `Post to ${suburb}`,
+
+      days,
+      whatsonGoing: s.whatsonGoing,
+      notGoing: !s.whatsonGoing,
+      toggleGoing: () => this.setState((st) => ({ whatsonGoing: !st.whatsonGoing })),
+      marketChips,
+    };
+  }
+}
+</script>
+</body>
+</html>

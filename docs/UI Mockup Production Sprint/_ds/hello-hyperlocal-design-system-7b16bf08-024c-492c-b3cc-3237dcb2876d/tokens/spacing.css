@@ -1,0 +1,24 @@
+/* Hello Hyperlocal — Spacing & radius tokens (brand-board §04) */
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Radius scale — exact values from brand-board, never snapped to a
+     different grid. */
+  --radius-xs: 12px;   /* rounded-xl  — chips, small tags */
+  --radius-sm: 16px;   /* rounded-2xl — stat chips, list cards, app-icon squircle */
+  --radius-md: 24px;   /* rounded-3xl — hero cards, sheets */
+  --radius-full: 999px; /* rounded-full — nav, tabs, CTAs, pills */
+
+  /* Shadow — used sparingly; the system leans on flat color fills and
+     borders rather than elevation. Reserve for floating nav / sheets. */
+  --shadow-float: 0 12px 32px rgba(15, 15, 15, 0.16);
+  --shadow-card: 0 1px 2px rgba(15, 15, 15, 0.06);
+}

@@ -1,0 +1,43 @@
+/* Hello Hyperlocal — Typography tokens
+   One geometric sans (DM Sans) across every surface. DM Mono for
+   data/technical/inline numeric values. Script/handwritten faces are
+   prohibited from every interactive component — that "Hello" script
+   lives only inside the static logo asset. */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800;9..40,900&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, 'SF Mono', monospace;
+
+  /* ---- Type scale (size / weight / line-height / tracking) ---- */
+  --text-display-size: 38px;
+  --text-display-weight: 800;
+  --text-display-leading: 1.05;
+  --text-display-tracking: -0.02em;
+
+  --text-heading-size: 22px;
+  --text-heading-weight: 800;
+  --text-heading-leading: 1.2;
+  --text-heading-tracking: -0.01em;
+
+  --text-card-title-size: 15px;
+  --text-card-title-weight: 700;
+  --text-card-title-leading: 1.35;
+
+  --text-body-size: 13px;
+  --text-body-weight: 400;
+  --text-body-leading: 1.6;
+
+  --text-label-size: 12px;
+  --text-label-weight: 700;
+  --text-label-leading: 1.4;
+
+  --text-eyebrow-size: 11px;
+  --text-eyebrow-weight: 700;
+  --text-eyebrow-leading: 1.4;
+  --text-eyebrow-tracking: 0.14em;
+
+  --text-mono-size: 12px;
+  --text-mono-weight: 400;
+}

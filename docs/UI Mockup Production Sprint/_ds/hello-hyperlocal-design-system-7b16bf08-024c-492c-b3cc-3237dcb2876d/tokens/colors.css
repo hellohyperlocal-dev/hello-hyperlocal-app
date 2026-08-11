@@ -1,0 +1,50 @@
+/* Hello Hyperlocal — Color tokens
+   Five brand tokens, per brand-board.html §02.
+   Dark Spruce is the dominant DARK surface (hero cards, ledgers, CTAs, nav).
+   Onyx is TEXT-ONLY — never a background, except the app-icon viewport. */
+
+:root {
+  /* ---- Base palette ---- */
+  --color-warm-white: #FCFAF7;   /* Canvas */
+  --color-panel: #FFFFFF;        /* Panel */
+  --color-spruce: #1C472A;       /* Dark Spruce — primary dark surface */
+  --color-hunter: #47663B;       /* Hunter Green — secondary accents */
+  --color-grass: #7ED957;        /* Radioactive Grass — action callouts only */
+  --color-onyx: #0F0F0F;         /* Onyx — text-only anchor */
+
+  /* ---- Soft tints (derived) ---- */
+  --color-grass-soft: rgba(126, 217, 87, 0.18);
+  --color-spruce-soft: rgba(28, 71, 42, 0.06);
+  --color-spruce-soft-strong: rgba(28, 71, 42, 0.12);
+  --color-onyx-line: rgba(15, 15, 15, 0.12);
+  --color-onyx-line-soft: rgba(15, 15, 15, 0.07);
+  --color-muted: #6F6F68;
+  --color-amber-soft: #F2ECDA;   /* pending status tint */
+  --color-amber-text: #8A6D1C;   /* pending status text */
+
+  /* ---- Semantic aliases ---- */
+  --surface-canvas: var(--color-warm-white);
+  --surface-panel: var(--color-panel);
+  --surface-dark: var(--color-spruce);
+  --surface-onyx: var(--color-onyx);
+
+  --text-primary: var(--color-onyx);
+  --text-on-dark: #FFFFFF;
+  --text-on-dark-muted: rgba(255, 255, 255, 0.78);
+  --text-on-dark-faint: rgba(255, 255, 255, 0.55);
+  --text-accent: var(--color-hunter);
+  --text-muted: var(--color-muted);
+  --text-cta-on-dark: var(--color-grass);
+
+  --border-default: var(--color-onyx-line);
+  --border-soft: var(--color-onyx-line-soft);
+
+  --action-primary: var(--color-grass);
+  --action-primary-text: var(--color-spruce);
+  --action-dark-fill: var(--color-spruce);
+
+  --status-live-bg: var(--color-grass-soft);
+  --status-live-text: var(--color-spruce);
+  --status-pending-bg: var(--color-amber-soft);
+  --status-pending-text: var(--color-amber-text);
+}

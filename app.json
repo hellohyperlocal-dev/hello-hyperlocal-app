@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Hello Hyperlocal",
+    "slug": "hello-hyperlocal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo/icon-app.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo/hhl-splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1C472A"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.hellohyperlocal.linden",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo/icon-adaptive-foreground.png",
+        "backgroundColor": "#1C472A"
+      },
+      "package": "com.hellohyperlocal.linden",
+      "config": {
+        "googleMaps": {
+          "apiKey": "REPLACE_WITH_REAL_GOOGLE_MAPS_ANDROID_API_KEY"
+        }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/logo/hhl-logo.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Hello Hyperlocal uses your photo library so you can add a profile photo or upload proof of address.",
+          "cameraPermission": "Hello Hyperlocal uses your camera so you can take a profile photo or scan a document."
+        }
+      ]
+    ],
+    "scheme": "hello-hyperlocal",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "1d1fa914-a04b-4c86-bd44-9da0da9a763a"
+      }
+    },
+    "owner": "lambo_24",
+    "updates": {
+      "url": "https://u.expo.dev/1d1fa914-a04b-4c86-bd44-9da0da9a763a"
+    }
+  }
+}

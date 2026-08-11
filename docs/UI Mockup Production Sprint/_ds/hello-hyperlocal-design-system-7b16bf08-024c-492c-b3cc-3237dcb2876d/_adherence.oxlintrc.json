@@ -1,0 +1,321 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/cards/**",
+              "components/core/**",
+              "components/navigation/**",
+              "ui_kits/app/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:DM Sans|DM Mono))/i]",
+        "message": "Font not provided by the design system. Available: DM Sans, DM Mono."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Avatar'] > JSXAttribute > JSXIdentifier[name!=/^(?:initials|size|key|ref|className|style|children)$/]",
+        "message": "<Avatar> doesn't accept that prop. Declared props: initials, size."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='BottomNavItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:key|label|icon|key|ref|className|style|children)$/]",
+        "message": "<BottomNavItem> doesn't accept that prop. Declared props: key, label, icon."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|variant|size|icon|disabled|onClick|type|key|ref|className|style|children)$/]",
+        "message": "<Button> doesn't accept that prop. Declared props: children, variant, size, icon, disabled, onClick, type."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:spruce|grass|white|ghost)$/]",
+        "message": "<Button> variant must be one of 'spruce' | 'grass' | 'white' | 'ghost'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:sm|md|lg)$/]",
+        "message": "<Button> size must be one of 'sm' | 'md' | 'lg'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='type'] > Literal[value!=/^(?:button|submit|reset)$/]",
+        "message": "<Button> type must be one of 'button' | 'submit' | 'reset'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CreateButton'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|onClick|key|ref|className|style|children)$/]",
+        "message": "<CreateButton> doesn't accept that prop. Declared props: label, onClick."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='FacilityCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:image|name|price|key|ref|className|style|children)$/]",
+        "message": "<FacilityCard> doesn't accept that prop. Declared props: image, name, price."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='HeroCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:eyebrow|title|body|ctaLabel|onCtaClick|key|ref|className|style|children)$/]",
+        "message": "<HeroCard> doesn't accept that prop. Declared props: eyebrow, title, body, ctaLabel, onCtaClick."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='IconButton'] > JSXAttribute > JSXIdentifier[name!=/^(?:icon|size|tone|onClick|ariaLabel|key|ref|className|style|children)$/]",
+        "message": "<IconButton> doesn't accept that prop. Declared props: icon, size, tone, onClick, ariaLabel."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='IconButton'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:spruce|onDark)$/]",
+        "message": "<IconButton> tone must be one of 'spruce' | 'onDark'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='LedgerCardLineItem'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|value|key|ref|className|style|children)$/]",
+        "message": "<LedgerCardLineItem> doesn't accept that prop. Declared props: label, value."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ListRow'] > JSXAttribute > JSXIdentifier[name!=/^(?:initials|name|meta|status|statusLabel|isLast|key|ref|className|style|children)$/]",
+        "message": "<ListRow> doesn't accept that prop. Declared props: initials, name, meta, status, statusLabel, isLast."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='ListRow'] > JSXAttribute[name.name='status'] > Literal[value!=/^(?:live|pending)$/]",
+        "message": "<ListRow> status must be one of 'live' | 'pending'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PillTabs'] > JSXAttribute > JSXIdentifier[name!=/^(?:tabs|active|onChange|key|ref|className|style|children)$/]",
+        "message": "<PillTabs> doesn't accept that prop. Declared props: tabs, active, onChange."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StatChip'] > JSXAttribute > JSXIdentifier[name!=/^(?:value|label|onArrowClick|key|ref|className|style|children)$/]",
+        "message": "<StatChip> doesn't accept that prop. Declared props: value, label, onArrowClick."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StatusBadge'] > JSXAttribute > JSXIdentifier[name!=/^(?:status|children|key|ref|className|style|children)$/]",
+        "message": "<StatusBadge> doesn't accept that prop. Declared props: status, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StatusBadge'] > JSXAttribute[name.name='status'] > Literal[value!=/^(?:live|pending)$/]",
+        "message": "<StatusBadge> status must be one of 'live' | 'pending'."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "Avatar": {
+        "replaces": []
+      },
+      "BottomNavItem": {
+        "replaces": []
+      },
+      "Button": {
+        "replaces": []
+      },
+      "CreateButton": {
+        "replaces": []
+      },
+      "FacilityCard": {
+        "replaces": []
+      },
+      "HeroCard": {
+        "replaces": []
+      },
+      "IconButton": {
+        "replaces": []
+      },
+      "LedgerCardLineItem": {
+        "replaces": []
+      },
+      "ListRow": {
+        "replaces": []
+      },
+      "PillTabs": {
+        "replaces": []
+      },
+      "StatChip": {
+        "replaces": []
+      },
+      "StatusBadge": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--action-dark-fill",
+      "--action-primary",
+      "--action-primary-text",
+      "--border-default",
+      "--border-soft",
+      "--color-amber-soft",
+      "--color-amber-text",
+      "--color-grass",
+      "--color-grass-soft",
+      "--color-hunter",
+      "--color-muted",
+      "--color-onyx",
+      "--color-onyx-line",
+      "--color-onyx-line-soft",
+      "--color-panel",
+      "--color-spruce",
+      "--color-spruce-soft",
+      "--color-spruce-soft-strong",
+      "--color-warm-white",
+      "--font-mono",
+      "--font-sans",
+      "--radius-full",
+      "--radius-md",
+      "--radius-sm",
+      "--radius-xs",
+      "--shadow-card",
+      "--shadow-float",
+      "--space-1",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-5",
+      "--space-6",
+      "--space-7",
+      "--space-8",
+      "--status-live-bg",
+      "--status-live-text",
+      "--status-pending-bg",
+      "--status-pending-text",
+      "--surface-canvas",
+      "--surface-dark",
+      "--surface-onyx",
+      "--surface-panel",
+      "--text-accent",
+      "--text-body-leading",
+      "--text-body-size",
+      "--text-body-weight",
+      "--text-card-title-leading",
+      "--text-card-title-size",
+      "--text-card-title-weight",
+      "--text-cta-on-dark",
+      "--text-display-leading",
+      "--text-display-size",
+      "--text-display-tracking",
+      "--text-display-weight",
+      "--text-eyebrow-leading",
+      "--text-eyebrow-size",
+      "--text-eyebrow-tracking",
+      "--text-eyebrow-weight",
+      "--text-heading-leading",
+      "--text-heading-size",
+      "--text-heading-tracking",
+      "--text-heading-weight",
+      "--text-label-leading",
+      "--text-label-size",
+      "--text-label-weight",
+      "--text-mono-size",
+      "--text-mono-weight",
+      "--text-muted",
+      "--text-on-dark",
+      "--text-on-dark-faint",
+      "--text-on-dark-muted",
+      "--text-primary"
+    ],
+    "tokenKinds": {
+      "--color-warm-white": "color",
+      "--color-panel": "color",
+      "--color-spruce": "color",
+      "--color-hunter": "color",
+      "--color-grass": "color",
+      "--color-onyx": "color",
+      "--color-grass-soft": "color",
+      "--color-spruce-soft": "color",
+      "--color-spruce-soft-strong": "color",
+      "--color-onyx-line": "color",
+      "--color-onyx-line-soft": "color",
+      "--color-muted": "color",
+      "--color-amber-soft": "color",
+      "--color-amber-text": "font",
+      "--surface-canvas": "color",
+      "--surface-panel": "color",
+      "--surface-dark": "color",
+      "--surface-onyx": "color",
+      "--text-primary": "font",
+      "--text-on-dark": "font",
+      "--text-on-dark-muted": "font",
+      "--text-on-dark-faint": "font",
+      "--text-accent": "font",
+      "--text-muted": "font",
+      "--text-cta-on-dark": "font",
+      "--border-default": "color",
+      "--border-soft": "color",
+      "--action-primary": "color",
+      "--action-primary-text": "font",
+      "--action-dark-fill": "color",
+      "--status-live-bg": "color",
+      "--status-live-text": "font",
+      "--status-pending-bg": "color",
+      "--status-pending-text": "font",
+      "--font-sans": "font",
+      "--font-mono": "font",
+      "--text-display-size": "font",
+      "--text-display-weight": "font",
+      "--text-display-leading": "font",
+      "--text-display-tracking": "font",
+      "--text-heading-size": "font",
+      "--text-heading-weight": "font",
+      "--text-heading-leading": "font",
+      "--text-heading-tracking": "font",
+      "--text-card-title-size": "font",
+      "--text-card-title-weight": "font",
+      "--text-card-title-leading": "font",
+      "--text-body-size": "font",
+      "--text-body-weight": "font",
+      "--text-body-leading": "font",
+      "--text-label-size": "font",
+      "--text-label-weight": "font",
+      "--text-label-leading": "font",
+      "--text-eyebrow-size": "font",
+      "--text-eyebrow-weight": "font",
+      "--text-eyebrow-leading": "font",
+      "--text-eyebrow-tracking": "font",
+      "--text-mono-size": "font",
+      "--text-mono-weight": "font",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-5": "spacing",
+      "--space-6": "spacing",
+      "--space-7": "spacing",
+      "--space-8": "spacing",
+      "--radius-xs": "radius",
+      "--radius-sm": "radius",
+      "--radius-md": "radius",
+      "--radius-full": "radius",
+      "--shadow-float": "shadow",
+      "--shadow-card": "shadow"
+    },
+    "fontFamilies": [
+      "DM Mono",
+      "DM Sans"
+    ]
+  }
+}

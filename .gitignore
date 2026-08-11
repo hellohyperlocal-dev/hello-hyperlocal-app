@@ -1,0 +1,44 @@
+# Local tooling artifacts
+.claude/
+.agents/
+.impeccable/
+
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+android/app/build/
+android/.gradle/
+android/app/.cxx/
+android/local.properties
+ios/build/
+ios/Pods/
+*.orig.*
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Local env files
+.env*.local
+.env
+
+# Typescript
+*.tsbuildinfo
+
+# Logs
+*.log

@@ -1,0 +1,412 @@
+{
+  ".agents/mcp_config.json": {
+    "mtime": 1785400631.523116,
+    "ast_hash": "a16b2cc4c65a76df53b1ceb293112cdb",
+    "semantic_hash": "a16b2cc4c65a76df53b1ceb293112cdb"
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1785408857.3897345,
+    "ast_hash": "8fd1c7d1a695bb9994455159fe13b2af",
+    "semantic_hash": "8fd1c7d1a695bb9994455159fe13b2af"
+  },
+  ".expo/devices.json": {
+    "mtime": 1785397769.3186724,
+    "ast_hash": "e5f6eb13c875f326cfd5915d3364614f",
+    "semantic_hash": "e5f6eb13c875f326cfd5915d3364614f"
+  },
+  "app.json": {
+    "mtime": 1785413654.992921,
+    "ast_hash": "8dd4f0960d0496c70d2ed89039b7a6b9",
+    "semantic_hash": "8dd4f0960d0496c70d2ed89039b7a6b9"
+  },
+  "app/(tabs)/_layout.tsx": {
+    "mtime": 1785406058.1040845,
+    "ast_hash": "9d3d8709d64c16d0732cfb67a2420d49",
+    "semantic_hash": "9d3d8709d64c16d0732cfb67a2420d49"
+  },
+  "app/(tabs)/index.tsx": {
+    "mtime": 1785410829.2751267,
+    "ast_hash": "3e2ff9718305ce3909a2c62e78ceb6eb",
+    "semantic_hash": "3e2ff9718305ce3909a2c62e78ceb6eb"
+  },
+  "app/(tabs)/love-local.tsx": {
+    "mtime": 1785411740.2416787,
+    "ast_hash": "fefd1c5859cfd40d4ca998408a7108ee",
+    "semantic_hash": "fefd1c5859cfd40d4ca998408a7108ee"
+  },
+  "app/(tabs)/whats-on.tsx": {
+    "mtime": 1785411798.2912009,
+    "ast_hash": "e96d17ad6b015599f7343aa0cf8cb966",
+    "semantic_hash": "e96d17ad6b015599f7343aa0cf8cb966"
+  },
+  "app/_layout.tsx": {
+    "mtime": 1785413807.6639833,
+    "ast_hash": "ed4b8ca7aaa493796651b5931bc6cfa7",
+    "semantic_hash": "ed4b8ca7aaa493796651b5931bc6cfa7"
+  },
+  "app/auth.tsx": {
+    "mtime": 1785413962.9244244,
+    "ast_hash": "fa7e958f4654344c3094997c42d1b08d",
+    "semantic_hash": "fa7e958f4654344c3094997c42d1b08d"
+  },
+  "app/index.tsx": {
+    "mtime": 1785413782.5078735,
+    "ast_hash": "18c07f0016a36d29bc50ae265fa649da",
+    "semantic_hash": "18c07f0016a36d29bc50ae265fa649da"
+  },
+  "app/onboarding.tsx": {
+    "mtime": 1785415808.1232271,
+    "ast_hash": "ba5357e6d68120b9f51d8d1524089341",
+    "semantic_hash": "ba5357e6d68120b9f51d8d1524089341"
+  },
+  "app/profile-setup.tsx": {
+    "mtime": 1785413904.7042212,
+    "ast_hash": "b3fb9ceebb54bc300d67f0abf73091bf",
+    "semantic_hash": "b3fb9ceebb54bc300d67f0abf73091bf"
+  },
+  "app/share-modal.tsx": {
+    "mtime": 1785406021.2339437,
+    "ast_hash": "17283ccc3e98262a40aa35a118038b4b",
+    "semantic_hash": "17283ccc3e98262a40aa35a118038b4b"
+  },
+  "app/verify-address.tsx": {
+    "mtime": 1785413940.887419,
+    "ast_hash": "8b2d273f2b75c925e050c4bc03c9dc4c",
+    "semantic_hash": "8b2d273f2b75c925e050c4bc03c9dc4c"
+  },
+  "app/welcome.tsx": {
+    "mtime": 1785408322.635637,
+    "ast_hash": "5221f82dfc275a2e253a650fc789ad57",
+    "semantic_hash": "5221f82dfc275a2e253a650fc789ad57"
+  },
+  "babel.config.js": {
+    "mtime": 1785397505.4537015,
+    "ast_hash": "8fc7a520543679a79421ba4e2dbcfe90",
+    "semantic_hash": "8fc7a520543679a79421ba4e2dbcfe90"
+  },
+  "docs/UI Mockup Production Sprint/_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/_adherence.oxlintrc.json": {
+    "mtime": 1785343754.0,
+    "ast_hash": "1481c3f440e44dbfc6ba3045535ed6d5",
+    "semantic_hash": "1481c3f440e44dbfc6ba3045535ed6d5"
+  },
+  "docs/UI Mockup Production Sprint/_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/_ds_bundle.js": {
+    "mtime": 1785343754.0,
+    "ast_hash": "630600be92a6522168e2be6d4b5772a3",
+    "semantic_hash": "630600be92a6522168e2be6d4b5772a3"
+  },
+  "docs/UI Mockup Production Sprint/_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/_ds_manifest.json": {
+    "mtime": 1785343754.0,
+    "ast_hash": "3e4123b0aff1d2996a3e4bd78c928387",
+    "semantic_hash": "3e4123b0aff1d2996a3e4bd78c928387"
+  },
+  "docs/UI Mockup Production Sprint/support.js": {
+    "mtime": 1785343756.0,
+    "ast_hash": "949692f59642cc6d67491e8fa370be14",
+    "semantic_hash": "949692f59642cc6d67491e8fa370be14"
+  },
+  "eas.json": {
+    "mtime": 1785408884.2456303,
+    "ast_hash": "b7dde14c9f76dd07d61eafa65f621cbf",
+    "semantic_hash": "b7dde14c9f76dd07d61eafa65f621cbf"
+  },
+  "package.json": {
+    "mtime": 1785413584.5223293,
+    "ast_hash": "acbf6c512373aca706147f967780d14d",
+    "semantic_hash": "acbf6c512373aca706147f967780d14d"
+  },
+  "src/components/Avatar.tsx": {
+    "mtime": 1785410572.4751651,
+    "ast_hash": "ebbe5ab97e683796878f0a099078f3fa",
+    "semantic_hash": "ebbe5ab97e683796878f0a099078f3fa"
+  },
+  "src/components/CategoryChips.tsx": {
+    "mtime": 1785411451.821443,
+    "ast_hash": "30cc26f034d29c18e9b1614bfe5bb46d",
+    "semantic_hash": "30cc26f034d29c18e9b1614bfe5bb46d"
+  },
+  "src/components/FacilityCard.tsx": {
+    "mtime": 1785405871.877682,
+    "ast_hash": "e247984875fa58c6f05ab7e632f3dfbb",
+    "semantic_hash": "e247984875fa58c6f05ab7e632f3dfbb"
+  },
+  "src/components/HeroCard.tsx": {
+    "mtime": 1785405852.9649353,
+    "ast_hash": "cf89da82fcc11278285aa236f8bf09f5",
+    "semantic_hash": "cf89da82fcc11278285aa236f8bf09f5"
+  },
+  "src/components/IconButton.tsx": {
+    "mtime": 1785405830.2450235,
+    "ast_hash": "a19a288cee02a30c63d44c5ab23ff701",
+    "semantic_hash": "a19a288cee02a30c63d44c5ab23ff701"
+  },
+  "src/components/ListRow.tsx": {
+    "mtime": 1785411440.7664433,
+    "ast_hash": "42bc5920e3e69c301b0d90eaad33cc73",
+    "semantic_hash": "42bc5920e3e69c301b0d90eaad33cc73"
+  },
+  "src/components/PillTabs.tsx": {
+    "mtime": 1785405860.994881,
+    "ast_hash": "1392f987fc3935bd980693279b5a91ce",
+    "semantic_hash": "1392f987fc3935bd980693279b5a91ce"
+  },
+  "src/components/StatChip.tsx": {
+    "mtime": 1785405843.910018,
+    "ast_hash": "243e11240f4545279316be9e839f9f11",
+    "semantic_hash": "243e11240f4545279316be9e839f9f11"
+  },
+  "src/constants/fonts.ts": {
+    "mtime": 1785406204.612696,
+    "ast_hash": "41ffc4325c66dffd0d6a04bceeef1dd2",
+    "semantic_hash": "41ffc4325c66dffd0d6a04bceeef1dd2"
+  },
+  "src/lib/mock-data.ts": {
+    "mtime": 1785411689.2956784,
+    "ast_hash": "63fe9f74004cf25a7887dc3ec3690d32",
+    "semantic_hash": "63fe9f74004cf25a7887dc3ec3690d32"
+  },
+  "src/lib/supabase.ts": {
+    "mtime": 1785397539.4400308,
+    "ast_hash": "c939f1306b1503c34c2d8d964e67afb6",
+    "semantic_hash": "c939f1306b1503c34c2d8d964e67afb6"
+  },
+  "tsconfig.json": {
+    "mtime": 1785397769.9914913,
+    "ast_hash": "771b824880b5c90a9190b9b53db2a8ad",
+    "semantic_hash": "771b824880b5c90a9190b9b53db2a8ad"
+  },
+  ".expo/README.md": {
+    "mtime": 1785397767.273654,
+    "ast_hash": "5b7704d0d342e4ae362671b70b5d86bc",
+    "semantic_hash": "5b7704d0d342e4ae362671b70b5d86bc"
+  },
+  "HANDOVER.md": {
+    "mtime": 1785417661.248666,
+    "ast_hash": "906f937459beb85eab0db9bb7bd30611",
+    "semantic_hash": "906f937459beb85eab0db9bb7bd30611"
+  },
+  "docs/UI Mockup Production Sprint/Sprint-print-83m1zn.dc.html": {
+    "mtime": 1785343754.0,
+    "ast_hash": "aef757489be098df6ba8cdca9142f184",
+    "semantic_hash": "aef757489be098df6ba8cdca9142f184"
+  },
+  "docs/UI Mockup Production Sprint/Sprint.dc.html": {
+    "mtime": 1785343754.0,
+    "ast_hash": "4d38e4e05061997d29e30b6efc16629f",
+    "semantic_hash": "4d38e4e05061997d29e30b6efc16629f"
+  },
+  "docs/UI Mockup Production Sprint/_ds/hello-hyperlocal-design-system-7b16bf08-024c-492c-b3cc-3237dcb2876d/readme.md": {
+    "mtime": 1785343754.0,
+    "ast_hash": "72f2ce84e346bead5cc0cf92e2c6397a",
+    "semantic_hash": "72f2ce84e346bead5cc0cf92e2c6397a"
+  },
+  "docs/brand-board_7.html": {
+    "mtime": 1785350824.8187208,
+    "ast_hash": "b124d221a670affde9bf9a790014da6d",
+    "semantic_hash": "b124d221a670affde9bf9a790014da6d"
+  },
+  "docs/HHL NDA (1).pdf": {
+    "mtime": 1785352984.3425283,
+    "ast_hash": "74d03263a0fcecc9ee9a97fd31438193",
+    "semantic_hash": "74d03263a0fcecc9ee9a97fd31438193"
+  },
+  "docs/Project Proposal_ Hello Hyperlocal Platform.pdf": {
+    "mtime": 1785352993.7782767,
+    "ast_hash": "847962239fb38873de5cfd50097e799e",
+    "semantic_hash": "847962239fb38873de5cfd50097e799e"
+  },
+  "docs/UI Mockup Production Sprint/uploads/HHL Brand values.pdf": {
+    "mtime": 1785343756.0,
+    "ast_hash": "3d9a6f708e3e9b735913604397887f6f",
+    "semantic_hash": "3d9a6f708e3e9b735913604397887f6f"
+  },
+  "docs/UI Mockup Production Sprint/uploads/HHL Brief.pdf": {
+    "mtime": 1785343756.0,
+    "ast_hash": "ca9400317c3ca75e1929e507150be3ac",
+    "semantic_hash": "ca9400317c3ca75e1929e507150be3ac"
+  },
+  "docs/UI Mockup Production Sprint/uploads/HHL NDA.pdf": {
+    "mtime": 1785343756.0,
+    "ast_hash": "82bf355d7b5946a2ac89a237d90f3b6e",
+    "semantic_hash": "82bf355d7b5946a2ac89a237d90f3b6e"
+  },
+  "docs/UI Mockup Production Sprint/uploads/Hello (Presentation).pdf": {
+    "mtime": 1785343756.0,
+    "ast_hash": "7c9bb6ee80588bbc6d26314cea246ed7",
+    "semantic_hash": "7c9bb6ee80588bbc6d26314cea246ed7"
+  },
+  "docs/UI Mockup Production Sprint/uploads/Project Proposal_ Hello Hyperlocal Platform.pdf": {
+    "mtime": 1785343756.0,
+    "ast_hash": "1e4a5d7c812b246dc2e8c880b344efe8",
+    "semantic_hash": "1e4a5d7c812b246dc2e8c880b344efe8"
+  },
+  "docs/UI Mockup Production Sprint/uploads/hello-presentation.pdf": {
+    "mtime": 1785343756.0,
+    "ast_hash": "7c9bb6ee80588bbc6d26314cea246ed7",
+    "semantic_hash": "7c9bb6ee80588bbc6d26314cea246ed7"
+  },
+  ".expo/web/cache/production/images/favicon/favicon-a2e9dbb39ddfec44d282afdf042ef5a11eb9f464a49e01510fc8244739df7aca-contain-transparent/favicon-48.png": {
+    "mtime": 1785397873.4046483,
+    "ast_hash": "6ea579487b33484bae141f1c85e07c0c",
+    "semantic_hash": "6ea579487b33484bae141f1c85e07c0c"
+  },
+  "assets/logo/hhl-logo.png": {
+    "mtime": 1785343756.0,
+    "ast_hash": "02162a6db375874a1380b3775c044bc4",
+    "semantic_hash": "02162a6db375874a1380b3775c044bc4"
+  },
+  "assets/logo/icon-adaptive-foreground.png": {
+    "mtime": 1785408587.7714403,
+    "ast_hash": "a72c7e27640c54b29c5102bd2c0c8f68",
+    "semantic_hash": "a72c7e27640c54b29c5102bd2c0c8f68"
+  },
+  "assets/logo/icon-app.png": {
+    "mtime": 1785408587.5414417,
+    "ast_hash": "88339dba4b918215d38a00d0b27f6aeb",
+    "semantic_hash": "88339dba4b918215d38a00d0b27f6aeb"
+  },
+  "assets/photography/breakfast.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "0d2c675db8e14d39161fdfb7674b691e",
+    "semantic_hash": "0d2c675db8e14d39161fdfb7674b691e"
+  },
+  "assets/photography/churros.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "c6ede04612613e8dafea2370254c46e5",
+    "semantic_hash": "c6ede04612613e8dafea2370254c46e5"
+  },
+  "assets/photography/dog-walking-park.jpeg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "48f60d12f815001937b5dd91b8ff92ec",
+    "semantic_hash": "48f60d12f815001937b5dd91b8ff92ec"
+  },
+  "assets/photography/goddess-cafe-linden.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "afd06231102bcfe2f486fee12fda9b4c",
+    "semantic_hash": "afd06231102bcfe2f486fee12fda9b4c"
+  },
+  "assets/photography/kids-fun-in-street.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "90c91d6f17f840c59e54dc6c4b15c5c1",
+    "semantic_hash": "90c91d6f17f840c59e54dc6c4b15c5c1"
+  },
+  "assets/photography/linden-lanes.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "e09007af5ef58e646dc3b36d8406803f",
+    "semantic_hash": "e09007af5ef58e646dc3b36d8406803f"
+  },
+  "assets/photography/linden-market-2.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "f660d32bdd38ad4524a8a85f261dcd7e",
+    "semantic_hash": "f660d32bdd38ad4524a8a85f261dcd7e"
+  },
+  "assets/photography/linden-market.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "3768bb6f276fb88864558e9e1fe4ee07",
+    "semantic_hash": "3768bb6f276fb88864558e9e1fe4ee07"
+  },
+  "assets/photography/linden-streetview.jpeg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "e9fdf989eda8818f2b5302003ea2157c",
+    "semantic_hash": "e9fdf989eda8818f2b5302003ea2157c"
+  },
+  "assets/photography/market-plate-breakfast.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "fe6ab345f049d5a0059428056585cd0a",
+    "semantic_hash": "fe6ab345f049d5a0059428056585cd0a"
+  },
+  "assets/photography/whippet-linden.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "70df254258478fb596226f6682eaafc8",
+    "semantic_hash": "70df254258478fb596226f6682eaafc8"
+  },
+  "assets/photography/winter-menu.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "d5b1cf86e08e864f4ee924edc5e6ab1b",
+    "semantic_hash": "d5b1cf86e08e864f4ee924edc5e6ab1b"
+  },
+  "docs/UI Mockup Production Sprint/assets/logo/hhl-logo.png": {
+    "mtime": 1785343756.0,
+    "ast_hash": "02162a6db375874a1380b3775c044bc4",
+    "semantic_hash": "02162a6db375874a1380b3775c044bc4"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/breakfast.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "0d2c675db8e14d39161fdfb7674b691e",
+    "semantic_hash": "0d2c675db8e14d39161fdfb7674b691e"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/churros.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "c6ede04612613e8dafea2370254c46e5",
+    "semantic_hash": "c6ede04612613e8dafea2370254c46e5"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/dog-walking-park.jpeg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "48f60d12f815001937b5dd91b8ff92ec",
+    "semantic_hash": "48f60d12f815001937b5dd91b8ff92ec"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/goddess-cafe-linden.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "afd06231102bcfe2f486fee12fda9b4c",
+    "semantic_hash": "afd06231102bcfe2f486fee12fda9b4c"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/kids-fun-in-street.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "90c91d6f17f840c59e54dc6c4b15c5c1",
+    "semantic_hash": "90c91d6f17f840c59e54dc6c4b15c5c1"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/linden-lanes.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "e09007af5ef58e646dc3b36d8406803f",
+    "semantic_hash": "e09007af5ef58e646dc3b36d8406803f"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/linden-market-2.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "f660d32bdd38ad4524a8a85f261dcd7e",
+    "semantic_hash": "f660d32bdd38ad4524a8a85f261dcd7e"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/linden-market.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "3768bb6f276fb88864558e9e1fe4ee07",
+    "semantic_hash": "3768bb6f276fb88864558e9e1fe4ee07"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/linden-streetview.jpeg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "e9fdf989eda8818f2b5302003ea2157c",
+    "semantic_hash": "e9fdf989eda8818f2b5302003ea2157c"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/market-plate-breakfast.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "fe6ab345f049d5a0059428056585cd0a",
+    "semantic_hash": "fe6ab345f049d5a0059428056585cd0a"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/whippet-linden.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "70df254258478fb596226f6682eaafc8",
+    "semantic_hash": "70df254258478fb596226f6682eaafc8"
+  },
+  "docs/UI Mockup Production Sprint/assets/photography/winter-menu.jpg": {
+    "mtime": 1785343756.0,
+    "ast_hash": "d5b1cf86e08e864f4ee924edc5e6ab1b",
+    "semantic_hash": "d5b1cf86e08e864f4ee924edc5e6ab1b"
+  },
+  "docs/UI Mockup Production Sprint/screenshots/canvas.png": {
+    "mtime": 1785343756.0,
+    "ast_hash": "9910543de7189ad7e072b6d4537332e6",
+    "semantic_hash": "9910543de7189ad7e072b6d4537332e6"
+  },
+  "docs/UI Mockup Production Sprint/screenshots/left.png": {
+    "mtime": 1785343756.0,
+    "ast_hash": "cccb447b769a62465e7424ed14198695",
+    "semantic_hash": "cccb447b769a62465e7424ed14198695"
+  },
+  "docs/UI Mockup Production Sprint/screenshots/new.png": {
+    "mtime": 1785343756.0,
+    "ast_hash": "82b9bdb0d24a5ce40153bca7c33f257c",
+    "semantic_hash": "82b9bdb0d24a5ce40153bca7c33f257c"
+  },
+  "docs/UI Mockup Production Sprint/screenshots/task78.png": {
+    "mtime": 1785343756.0,
+    "ast_hash": "44b8a43857c1c014be233e0224e5c6aa",
+    "semantic_hash": "44b8a43857c1c014be233e0224e5c6aa"
+  }
+}
