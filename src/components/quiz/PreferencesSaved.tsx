@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { ArrowRight } from 'lucide-react-native';
-import CheckmarkAnimation from './CheckmarkAnimation';
+import { CheckCircle2, ArrowRight } from 'lucide-react-native';
 import { fonts } from '../../constants/fonts';
 import { colors } from '../../constants/theme';
 
@@ -14,7 +13,9 @@ interface PreferencesSavedProps {
 export function PreferencesSaved({ savedCount, onContinue, continueLabel = 'Continue to Hello Hyperlocal' }: PreferencesSavedProps) {
   return (
     <View style={styles.container}>
-      <CheckmarkAnimation size={112} />
+      <View style={styles.icon}>
+        <CheckCircle2 size={28} color={colors.darkSpruce} />
+      </View>
 
       <Text style={styles.title}>You're all set</Text>
       <Text style={styles.subtitle}>
@@ -43,6 +44,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 14,
     paddingTop: 24,
+  },
+  icon: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    backgroundColor: colors.chipGreen,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 4,
   },
   title: {
     color: colors.onyx,
