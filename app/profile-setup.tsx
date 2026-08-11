@@ -117,7 +117,7 @@ export default function ProfileSetupScreen() {
 
         <TouchableOpacity
           style={styles.continueBtn}
-          onPress={() => router.replace('/(tabs)')}
+          onPress={() => router.replace('/profile-quiz')}
           activeOpacity={0.85}
           accessibilityRole="button"
           accessibilityLabel="Continue to app"

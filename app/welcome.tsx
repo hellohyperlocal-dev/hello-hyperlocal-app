@@ -2,10 +2,16 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Users, Store, Compass, CheckCircle2, ArrowRight } from 'lucide-react-native';
+import { Users, Store, Compass, CheckCircle2, ArrowRight, LucideIcon } from 'lucide-react-native';
 import { fonts } from '../src/constants/fonts';
 import { colors } from '../src/constants/theme';
 type RoleType = 'resident' | 'business' | 'visitor';
+
+const ROLE_OPTIONS: { id: RoleType; label: string; icon: LucideIcon }[] = [
+  { id: 'resident', label: 'Resident', icon: Users },
+  { id: 'business', label: 'Local Business', icon: Store },
+  { id: 'visitor', label: 'Just Browsing', icon: Compass },
+];
 
 export default function WelcomeScreen() {
   const router = useRouter();
@@ -50,80 +56,24 @@ export default function WelcomeScreen() {
         <View style={styles.cardsContainer}>
           <Text style={styles.sectionHeader}>Choose How You Want to Join</Text>
 
-          {/* Resident Card */}
-          <TouchableOpacity
-            style={[styles.card, selectedRole === 'resident' && styles.cardActive]}
-            onPress={() => setSelectedRole('resident')}
-            activeOpacity={0.8}
-            accessibilityRole="radio"
-            accessibilityState={{ selected: selectedRole === 'resident' }}
-            accessibilityLabel="I am a Resident. Discover local events, buy/sell on the marketplace, and get community updates."
-          >
-            <View style={styles.cardHeader}>
-              <Users size={20} color={selectedRole === 'resident' ? colors.radioactiveGrass : colors.darkSpruce} />
-              <Text style={[styles.cardTitle, selectedRole === 'resident' && styles.cardTitleActive]}>
-                I am a Resident
-              </Text>
-            </View>
-            <Text style={[styles.cardBody, selectedRole === 'resident' && styles.cardBodyActive]}>
-              Discover local events, buy/sell on the marketplace, and get community updates.
-            </Text>
-            {selectedRole === 'resident' && (
-              <View style={styles.checkIcon}>
-                <CheckCircle2 size={20} color={colors.radioactiveGrass} />
-              </View>
-            )}
-          </TouchableOpacity>
-
-          {/* Local Business Card */}
-          <TouchableOpacity
-            style={[styles.card, selectedRole === 'business' && styles.cardActive]}
-            onPress={() => setSelectedRole('business')}
-            activeOpacity={0.8}
-            accessibilityRole="radio"
-            accessibilityState={{ selected: selectedRole === 'business' }}
-            accessibilityLabel="Local Business or Merchant. Feature your business, post marketplace offers, and boost listings to neighbours."
-          >
-            <View style={styles.cardHeader}>
-              <Store size={20} color={selectedRole === 'business' ? colors.radioactiveGrass : colors.darkSpruce} />
-              <Text style={[styles.cardTitle, selectedRole === 'business' && styles.cardTitleActive]}>
-                Local Business / Merchant
-              </Text>
-            </View>
-            <Text style={[styles.cardBody, selectedRole === 'business' && styles.cardBodyActive]}>
-              Feature your business, post marketplace offers, and boost listings to neighbours.
-            </Text>
-            {selectedRole === 'business' && (
-              <View style={styles.checkIcon}>
-                <CheckCircle2 size={20} color={colors.radioactiveGrass} />
-              </View>
-            )}
-          </TouchableOpacity>
-
-          {/* Visitor Card */}
-          <TouchableOpacity
-            style={[styles.card, selectedRole === 'visitor' && styles.cardActive]}
-            onPress={() => setSelectedRole('visitor')}
-            activeOpacity={0.8}
-            accessibilityRole="radio"
-            accessibilityState={{ selected: selectedRole === 'visitor' }}
-            accessibilityLabel="Visitor, just browsing. Instant 1-tap entry to explore the Linden feed without signing up."
-          >
-            <View style={styles.cardHeader}>
-              <Compass size={20} color={selectedRole === 'visitor' ? colors.radioactiveGrass : colors.darkSpruce} />
-              <Text style={[styles.cardTitle, selectedRole === 'visitor' && styles.cardTitleActive]}>
-                Visitor / Just Browsing
-              </Text>
-            </View>
-            <Text style={[styles.cardBody, selectedRole === 'visitor' && styles.cardBodyActive]}>
-              Instant 1-tap entry to explore the Linden feed without signing up.
-            </Text>
-            {selectedRole === 'visitor' && (
-              <View style={styles.checkIcon}>
-                <CheckCircle2 size={20} color={colors.radioactiveGrass} />
-              </View>
-            )}
-          </TouchableOpacity>
+          {ROLE_OPTIONS.map(({ id, label, icon: Icon }) => {
+            const isActive = selectedRole === id;
+            return (
+              <TouchableOpacity
+                key={id}
+                style={[styles.card, isActive && styles.cardActive]}
+                onPress={() => setSelectedRole(id)}
+                activeOpacity={0.8}
+                accessibilityRole="radio"
+                accessibilityState={{ selected: isActive }}
+                accessibilityLabel={label}
+              >
+                <Icon size={20} color={isActive ? colors.radioactiveGrass : colors.darkSpruce} />
+                <Text style={[styles.cardTitle, isActive && styles.cardTitleActive]}>{label}</Text>
+                {isActive && <CheckCircle2 size={20} color={colors.radioactiveGrass} />}
+              </TouchableOpacity>
+            );
+          })}
         </View>
 
         {/* CTA Button */}
@@ -209,7 +159,7 @@ const styles = StyleSheet.create({
     lineHeight: 18,
   },
   cardsContainer: {
-    gap: 12,
+    gap: 8,
     marginVertical: 8,
   },
   sectionHeader: {
@@ -219,45 +169,28 @@ const styles = StyleSheet.create({
     letterSpacing: 1.5,
   },
   card: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
     backgroundColor: colors.white,
-    borderRadius: 24,
-    padding: 20,
+    borderRadius: 18,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
     borderWidth: 1,
     borderColor: colors.border,
-    gap: 6,
-    position: 'relative',
   },
   cardActive: {
     backgroundColor: colors.darkSpruce,
     borderColor: colors.darkSpruce,
   },
-  cardHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
   cardTitle: {
+    flex: 1,
     color: colors.onyx,
     fontFamily: fonts.sans.extraBold,
     fontSize: 15,
   },
   cardTitleActive: {
     color: colors.white,
-  },
-  cardBody: {
-    color: colors.muted,
-    fontFamily: fonts.sans.regular,
-    fontSize: 12,
-    lineHeight: 16,
-    paddingRight: 24,
-  },
-  cardBodyActive: {
-    color: 'rgba(255, 255, 255, 0.8)',
-  },
-  checkIcon: {
-    position: 'absolute',
-    top: 20,
-    right: 20,
   },
   ctaButton: {
     backgroundColor: colors.radioactiveGrass,

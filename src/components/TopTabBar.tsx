@@ -11,7 +11,7 @@ export function TopTabBar({ state, descriptors, navigation }: BottomTabBarProps)
   const router = useRouter();
 
   return (
-    <View style={[styles.wrap, { paddingTop: insets.top }]}>
+    <View style={[styles.wrap, { paddingTop: insets.top + layout.topBarGap }]}>
       <View style={styles.row}>
         {state.routes.map((route, index) => {
           const { options } = descriptors[route.key];

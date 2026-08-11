@@ -42,6 +42,7 @@ export default function RootLayout() {
         <Stack.Screen name="welcome" options={{ headerShown: false }} />
         <Stack.Screen name="auth" options={{ headerShown: false }} />
         <Stack.Screen name="profile-setup" options={{ headerShown: false }} />
+        <Stack.Screen name="profile-quiz" options={{ headerShown: false }} />
         <Stack.Screen name="verify-address" options={{ headerShown: false }} />
         <Stack.Screen name="profile" options={{ headerShown: false }} />
         <Stack.Screen name="settings/edit-profile" options={{ headerShown: false }} />
@@ -49,6 +50,7 @@ export default function RootLayout() {
         <Stack.Screen name="settings/verification" options={{ headerShown: false }} />
         <Stack.Screen name="settings/security" options={{ headerShown: false }} />
         <Stack.Screen name="settings/notifications" options={{ headerShown: false }} />
+        <Stack.Screen name="settings/interests" options={{ headerShown: false }} />
         <Stack.Screen name="settings/account" options={{ headerShown: false }} />
         <Stack.Screen name="settings/legal/index" options={{ headerShown: false }} />
         <Stack.Screen name="settings/legal/[doc]" options={{ headerShown: false }} />

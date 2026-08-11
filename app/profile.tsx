@@ -8,6 +8,7 @@ import {
   ShieldAlert,
   Lock,
   Bell,
+  Sparkles,
   MapPinned,
   LifeBuoy,
   ScrollText,
@@ -124,6 +125,12 @@ export default function ProfileScreen() {
             title="Notifications"
             subtitle="Choose what you hear about"
             onPress={() => router.push('/settings/notifications')}
+          />
+          <NavRow
+            icon={Sparkles}
+            title="Your Interests"
+            subtitle="Retake the quiz to update your feed"
+            onPress={() => router.push('/settings/interests')}
           />
           <NavRow
             icon={UserCog}

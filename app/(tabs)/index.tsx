@@ -105,7 +105,7 @@ export default function MainFeedScreen() {
   return (
     <View style={styles.container}>
       {/* Sticky Header */}
-      <View style={[styles.topHeader, { paddingTop: insets.top + layout.topBarContentHeight + 16 }]}>
+      <View style={[styles.topHeader, { paddingTop: insets.top + layout.topBarGap + layout.topBarContentHeight + 16 }]}>
         <View>
           <Text style={styles.greetingText}>Hello, {firstName}.</Text>
           <Text style={styles.suburbCaption}>Linden · Block 4</Text>

@@ -86,6 +86,64 @@ export interface StoredUserData {
   avatarUri?: string;
 }
 
+export interface QuizAnswers {
+  role?: string;
+  ageGroup?: string;
+  household: string[];
+  interests: string[];
+  hearAbout: string[];
+  organisations: string[];
+  weekendActivities: string[];
+  feedPreferences: string[];
+  notificationPreferences: string[];
+  participation: string[];
+  joinReason?: string;
+}
+
+export type PersonaId =
+  | 'coffee_lover'
+  | 'food_explorer'
+  | 'shop_local_supporter'
+  | 'outdoor_enthusiast'
+  | 'family_first'
+  | 'pet_lover'
+  | 'culture_seeker'
+  | 'active_lifestyle'
+  | 'community_builder'
+  | 'local_entrepreneur';
+
+export interface PersonaDefinition {
+  id: PersonaId;
+  emoji: string;
+  label: string;
+}
+
+export const PERSONA_DEFINITIONS: PersonaDefinition[] = [
+  { id: 'coffee_lover', emoji: '☕', label: 'Coffee Lover' },
+  { id: 'food_explorer', emoji: '🍽', label: 'Food Explorer' },
+  { id: 'shop_local_supporter', emoji: '🛍', label: 'Shop Local Supporter' },
+  { id: 'outdoor_enthusiast', emoji: '🌿', label: 'Outdoor Enthusiast' },
+  { id: 'family_first', emoji: '👨‍👩‍👧', label: 'Family First' },
+  { id: 'pet_lover', emoji: '🐶', label: 'Pet Lover' },
+  { id: 'culture_seeker', emoji: '🎨', label: 'Culture Seeker' },
+  { id: 'active_lifestyle', emoji: '🏃', label: 'Active Lifestyle' },
+  { id: 'community_builder', emoji: '🏡', label: 'Community Builder' },
+  { id: 'local_entrepreneur', emoji: '💼', label: 'Local Entrepreneur' },
+];
+
+export interface InterestScoreResult {
+  scores: Record<PersonaId, number>;
+  topPersonas: PersonaId[];
+}
+
+export interface StoredUserInterests {
+  version: 1;
+  answers: QuizAnswers;
+  scoreResult: InterestScoreResult;
+  completedAt: string;
+  skipped: boolean;
+}
+
 export interface AppNotification {
   id: string;
   type: 'alert' | 'deal' | 'event' | 'reply';
@@ -344,14 +402,14 @@ export const LOCAL_BUSINESSES: LocalBusiness[] = [
   },
   {
     id: 'biz-6',
-    name: 'Linden Lanes Guesthouse',
-    category: 'Guesthouses',
-    description: 'A quiet tree-lined guesthouse for visiting family and weekend stays, walking distance to 4th Avenue.',
+    name: 'Linden Lanes Shopping Centre',
+    category: 'Retail',
+    description: 'A neighbourhood shopping centre with everyday retail, services, and a handful of local favourites under one roof.',
     address: '12 Modderfontein Rd, Linden',
     rating: 4.9,
     reviewCount: 47,
     isOpen: true,
-    hours: 'Check-in from 2pm',
+    hours: 'Mon–Sat, 8am–6pm',
     imageUrl: require('../../assets/photography/linden-lanes.jpg'),
     coordinate: { latitude: -26.1462, longitude: 28.0004 },
   },

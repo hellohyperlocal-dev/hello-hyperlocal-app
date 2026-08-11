@@ -12,6 +12,7 @@ const ALL_APP_KEYS = [
   'hhl_onboarding_seen',
   'hhl_user_role',
   'hhl_user_data',
+  'hhl_user_interests',
   'hhl_verification_status',
   'hhl_biometric_enabled',
   'hhl_notif_prefs',

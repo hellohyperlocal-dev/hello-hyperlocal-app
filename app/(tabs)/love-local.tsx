@@ -27,7 +27,7 @@ export default function LoveLocalScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={[styles.header, { paddingTop: insets.top + layout.topBarContentHeight + 12 }]}>
+      <View style={[styles.header, { paddingTop: insets.top + layout.topBarGap + layout.topBarContentHeight + 12 }]}>
         <Text style={styles.title}>Love Local</Text>
       </View>
 

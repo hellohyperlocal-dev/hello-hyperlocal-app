@@ -46,4 +46,6 @@ export const radius = {
 export const layout = {
   // Content height of the top tab bar, excluding the safe-area inset above it.
   topBarContentHeight: 56,
+  // Extra breathing room between the safe-area inset (status bar) and the top tab bar's content.
+  topBarGap: 10,
 };

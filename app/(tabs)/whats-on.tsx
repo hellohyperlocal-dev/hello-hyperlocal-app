@@ -52,7 +52,7 @@ export default function WhatsOnScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={[styles.header, { paddingTop: insets.top + layout.topBarContentHeight + 12 }]}>
+      <View style={[styles.header, { paddingTop: insets.top + layout.topBarGap + layout.topBarContentHeight + 12 }]}>
         <Text style={styles.title}>What's on</Text>
       </View>
 
