@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Linking } from 'react-native';
 import { useRouter, useLocalSearchParams } from 'expo-router';
-import MapView, { Marker } from 'react-native-maps';
+import MapView, { Marker } from '../../src/components/AppMapView';
 import { ArrowLeft, Star, MapPin, Clock, Navigation } from 'lucide-react-native';
 import { LOCAL_BUSINESSES } from '../../src/lib/mock-data';
 import { Badge } from '../../src/components/Badge';

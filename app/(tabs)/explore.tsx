@@ -2,7 +2,7 @@ import React, { useMemo, useRef, useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TextInput } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import MapView, { Marker } from 'react-native-maps';
+import MapView, { Marker } from '../../src/components/AppMapView';
 import { Star, Search } from 'lucide-react-native';
 import { LOCAL_BUSINESSES } from '../../src/lib/mock-data';
 import { CategoryChips } from '../../src/components/CategoryChips';
