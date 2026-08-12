@@ -1,65 +1,51 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
+export const colors = {
+  darkSpruce: '#1C472A',
+  radioactiveGrass: '#7ED957',
+  hunterGreen: '#47663B',
+  warmWhite: '#FCFAF7',
+  onyx: '#0F0F0F',
+  white: '#FFFFFF',
+  muted: '#6F6F68',
+  border: 'rgba(15, 15, 15, 0.07)',
+  borderStrong: 'rgba(15, 15, 15, 0.12)',
+  placeholder: '#999999',
+  softGreen: 'rgba(28, 71, 42, 0.06)',
+  chipGreen: 'rgba(126, 217, 87, 0.18)',
+  divider: '#E5E5E5',
+  surfaceMuted: '#F5F5F5',
+  errorBg: '#FEE2E2',
+  errorBorder: '#FCA5A5',
+  errorText: '#991B1B',
 
-import '@/global.css';
+  // Semantic colors (from design.md)
+  success: '#2ead4b',
+  successDeep: '#054d28',
+  successBg: '#e2f6d5',
 
-import { Platform } from 'react-native';
+  warning: '#ffd11a',
+  warningDeep: '#b86700',
+  warningBg: '#FEF3C7',
+  warningText: '#4a3b1c',
 
-export const Colors = {
-  light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
-  },
-  dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
-  },
-} as const;
+  danger: '#d03238',
+  dangerDeep: '#a72027',
+  dangerBg: '#FEE2E2',
 
-export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
+  info: '#2563EB',
+  infoDeep: '#1E40AF',
+  infoBg: '#DBEAFE',
+};
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: 'var(--font-display)',
-    serif: 'var(--font-serif)',
-    rounded: 'var(--font-rounded)',
-    mono: 'var(--font-mono)',
-  },
-});
+export const radius = {
+  sm: 12,
+  md: 16,
+  lg: 24,
+  pill: 999,
+};
 
-export const Spacing = {
-  half: 2,
-  one: 4,
-  two: 8,
-  three: 16,
-  four: 24,
-  five: 32,
-  six: 64,
-} as const;
-
-export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
-export const MaxContentWidth = 800;
+export const layout = {
+  // Content height of the top tab bar, excluding the safe-area inset above it.
+  topBarContentHeight: 56,
+  // Extra breathing room between the safe-area inset (status bar) and the top tab bar's content.
+  topBarGap: 10,
+};
