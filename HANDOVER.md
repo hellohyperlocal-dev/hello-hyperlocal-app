@@ -1,9 +1,30 @@
 # Hello Hyperlocal — Project Handover
 
-## ⚠️ IN PROGRESS: Full rebuild on Expo SDK 54 (started 2026-08-12)
+## ✅ REBUILD COMPLETE (Expo SDK 54, cutover finished 2026-08-12)
 
-**If you're picking this up cold, read this section first — it supersedes
-parts of §2 below until it says "REBUILD COMPLETE."**
+**This section is now historical context, not an active blocker** — the
+rebuild described below is complete and `master` on
+`hellohyperlocal-dev/hello-hyperlocal-app` now IS this codebase. The rest of
+this document (§2 onward) is no longer superseded by anything.
+
+**How cutover happened**: `hello-hyperlocal-rebuild` (a fresh
+`create-expo-app` scaffold, never branched from the real repo) was pushed to
+branch `rebuild/sdk54-wip`, verified via GitHub Actions CI
+(`gradlew assembleDebug` passing clean on GitHub's Linux runners — proof the
+native build compiles correctly, after local Windows builds hit a
+Windows-specific `react-native-worklets` bug and a WSL2 workaround proved too
+unstable in this environment to finish), then force-merged into `master`
+(`git push origin origin/rebuild/sdk54-wip:master --force`) since the two
+branches had unrelated histories and couldn't produce a normal PR diff. The
+pre-cutover SDK 51 state is fully preserved and recoverable via the
+`pre-rebuild-sdk51` git tag.
+
+**Still genuinely open, not done yet**: visually confirming `expo-maps`
+renders real map tiles on-device — confirmed the native module loads and
+fails gracefully (not a crash) when Google Play Services is unavailable
+(the LDPlayer instance used for testing didn't have it), which is real
+positive signal, but actual rendered tiles were never seen. Try on a real
+device or a Play-Services-enabled emulator whenever convenient.
 
 The original app (this repo, SDK 51) is being **rebuilt from scratch** on
 current Expo SDK 54 / React Native 0.81.5 / mandatory New Architecture, after
@@ -84,7 +105,7 @@ file for exact task detail per step):
   - **Second lesson**: `MSYS_NO_PATHCONV=1` must be exported before any `wsl ...` invocation from this machine's Git Bash, or Unix-style path arguments (e.g. `/mnt/c/...`) get mangled into bogus Windows paths (`C:/Program Files/Git/mnt/c/...`) before `wsl.exe` ever sees them.
   - **Third lesson**: don't `nohup ... & disown` *inside* a `wsl -d Ubuntu -- bash -c "..."` invocation expecting it to survive — WSL2 tears down the whole lightweight VM shortly after the last attached `wsl.exe` client disconnects, killing everything inside including nohup'd processes. Instead, wrap the *outer* `wsl.exe` invocation itself in `nohup ... & disown` at the Windows/Git-Bash shell level (i.e. `nohup wsl -d Ubuntu -u root -- bash /path/to/script.sh > outerlog 2>&1 & disown`) — this keeps one `wsl.exe` client attached for the whole script's duration (preventing VM idle-shutdown) while also escaping this tool's own ~10-minute per-call timeout cap.
   - **The build itself got a long way in** before being manually stopped (not a failure — user chose to stop for the night given session length): `npm install` succeeded, `expo prebuild` succeeded, and `gradlew assembleDebug` ran for **35+ minutes actively compiling** — well past the exact point where the Windows-native build died (the `react-native-worklets` C++ link step) — reaching Kotlin compilation of `expo-modules-core`, `react-native-worklets` native lib merging, and most `expo-*` package configuration, with no errors of any kind logged. This is a strong signal the WSL2 approach is genuinely working and just needs to be let run to completion (stopped by choice, not by any error) — **rerun `wsl-build.sh` next session and just let it finish; no new investigation should be needed, this looks like it was on track to succeed.**
-- [ ] Step 7 — Cut over: new branch in the real repo, verify Vercel preview deploy, merge to `master`
+- [x] Step 7 — Cut over: new branch pushed (`rebuild/sdk54-wip`), native build verified via GitHub Actions CI, force-merged to `master` (unrelated histories — see banner at top of this file). Vercel preview deploy verification dropped (was only ever a backup client-access plan, not a real requirement). Old SDK 51 state preserved via `pre-rebuild-sdk51` tag.
 
 **Until "REBUILD COMPLETE" is marked here**, this repo (`Hello-Hyperlocal`,
 not `hello-hyperlocal-rebuild`) is still the live/deployed version — don't
